@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_width" format="dimension" />
+        <attr name="ci_height" format="dimension" />
+        <attr name="ci_margin" format="dimension" />
+        <attr name="ci_animator" format="reference" />
+        <attr name="ci_animator_reverse" format="reference" />
+        <attr name="ci_drawable" format="reference" />
+        <attr name="ci_drawable_unselected" format="reference" />
+
+        <attr name="ci_orientation" format="enum">
+            <!-- Defines an horizontal widget. -->
+            <enum name="horizontal" value="0" />
+            <!-- Defines a vertical widget. -->
+            <enum name="vertical" value="1" />
+        </attr>
+
+        <attr name="ci_gravity">
+            <!-- Push object to the top of its container, not changing its size. -->
+            <flag name="top" value="0x30" />
+            <!-- Push object to the bottom of its container, not changing its size. -->
+            <flag name="bottom" value="0x50" />
+            <!-- Push object to the left of its container, not changing its size. -->
+            <flag name="left" value="0x03" />
+            <!-- Push object to the right of its container, not changing its size. -->
+            <flag name="right" value="0x05" />
+            <!-- Place object in the vertical center of its container, not changing its size. -->
+            <flag name="center_vertical" value="0x10" />
+            <!-- Grow the vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill_vertical" value="0x70" />
+            <!-- Place object in the horizontal center of its container, not changing its size. -->
+            <flag name="center_horizontal" value="0x01" />
+            <!-- Grow the horizontal size of the object if needed so it completely fills its container. -->
+            <flag name="fill_horizontal" value="0x07" />
+            <!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
+            <flag name="center" value="0x11" />
+            <!-- Grow the horizontal and vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill" value="0x77" />
+            <!-- Additional option that can be set to have the top and/or bottom edges of
+            the child clipped to its container's bounds.
+            The clip will be based on the vertical gravity: a top gravity will clip the bottom
+            edge, a bottom gravity will clip the top edge, and neither will clip both edges. -->
+            <flag name="clip_vertical" value="0x80" />
+            <!-- Additional option that can be set to have the left and/or right edges of
+            the child clipped to its container's bounds.
+            The clip will be based on the horizontal gravity: a left gravity will clip the right
+            edge, a right gravity will clip the left edge, and neither will clip both edges. -->
+            <flag name="clip_horizontal" value="0x08" />
+            <!-- Push object to the beginning of its container, not changing its size. -->
+            <flag name="start" value="0x00800003" />
+            <!-- Push object to the end of its container, not changing its size. -->
+            <flag name="end" value="0x00800005" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="ViewPagerIndicator">
+        <!-- Style of the circle indicator. -->
+        <attr name="vpiCirclePageIndicatorStyle" format="reference" />
+        <!-- Style of the icon indicator's views. -->
+        <attr name="vpiIconPageIndicatorStyle" format="reference" />
+        <!-- Style of the line indicator. -->
+        <attr name="vpiLinePageIndicatorStyle" format="reference" />
+        <!-- Style of the title indicator. -->
+        <attr name="vpiTitlePageIndicatorStyle" format="reference" />
+        <!-- Style of the tab indicator's tabs. -->
+        <attr name="vpiTabPageIndicatorStyle" format="reference" />
+        <!-- Style of the underline indicator. -->
+        <attr name="vpiUnderlinePageIndicatorStyle" format="reference" />
+    </declare-styleable>
+
+    <attr name="centered" format="boolean" />
+    <attr name="selectedColor" format="color" />
+    <attr name="strokeWidth" format="dimension" />
+    <attr name="unselectedColor" format="color" />
+
+    <declare-styleable name="CirclePageIndicator">
+        <!-- Whether or not the indicators should be centered. -->
+        <attr name="centered" />
+        <!-- Color of the filled circle that represents the current page. -->
+        <attr name="fillColor" format="color" />
+        <!-- Color of the filled circles that represents pages. -->
+        <attr name="pageColor" format="color" />
+        <!-- Orientation of the indicator. -->
+        <attr name="android:orientation" />
+        <!-- Radius of the circles. This is also the spacing between circles. -->
+        <attr name="radius" format="dimension" />
+        <!-- Whether or not the selected indicator snaps to the circles. -->
+        <attr name="snap" format="boolean" />
+        <!-- Color of the open circles. -->
+        <attr name="strokeColor" format="color" />
+        <!-- Width of the stroke used to draw the circles. -->
+        <attr name="strokeWidth" />
+        <!-- View background -->
+        <attr name="android:background" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="trimLength" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CountryCodePicker">
+        <!--{@deprecated Use defaultNameCode instead.}-->
+        <attr name="ccp_defaultPhoneCode" format="integer" />
+        <attr name="ccp_contentColor" format="color" />
+        <attr name="ccp_textSize" format="dimension" />
+        <attr name="ccp_arrowSize" format="dimension" />
+        <attr name="ccp_customMasterCountries" format="string" />
+        <attr name="ccp_flagBorderColor" format="color" />
+        <attr name="ccp_countryPreference" format="string" />
+        <attr name="ccp_defaultNameCode" format="string" />
+        <attr name="ccp_textGravity" format="enum">
+            <enum name="LEFT" value="-1" />
+            <enum name="RIGHT" value="1" />
+            <enum name="CENTER" value="0" />
+        </attr>
+        <!--CCP bool properties-->
+        <attr name="ccp_showNameCode" format="boolean" />
+        <attr name="ccp_showFlag" format="boolean" />
+        <attr name="ccp_showFullName" format="boolean" />
+        <attr name="ccp_clickable" format="boolean" />
+        <attr name="ccp_showPhoneCode" format="boolean" />
+        <attr name="ccp_autoDetectLanguage" format="boolean" />
+        <attr name="ccp_autoDetectCountry" format="boolean" />
+        <attr name="ccp_autoFormatNumber" format="boolean" />
+
+        <!--CCP Dialog properties-->
+        <attr name="ccpDialog_keyboardAutoPopup" format="boolean" />
+        <attr name="ccpDialog_allowSearch" format="boolean" />
+        <attr name="ccpDialog_showPhoneCode" format="boolean" />
+        <attr name="ccpDialog_showFastScroller" format="boolean" />
+        <attr name="ccpDialog_fastScroller_bubbleColor" format="color" />
+        <attr name="ccpDialog_fastScroller_handleColor" format="color" />
+        <attr name="ccpDialog_fastScroller_bubbleTextAppearance" format="reference" />
+        <attr name="ccpDialog_backgroundColor" format="color" />
+        <attr name="ccpDialog_textColor" format="color" />
+        <attr name="ccpDialog_searchEditTextTint" format="color" />
+
+        <!--list of languages-->
+        <!--Make sure: order in this list must match order of Language Enum in CountryCodePicker.java. Values must be ascending starting from 0.-->
+        <attr name="ccp_defaultLanguage" format="enum">
+            <enum name="ARABIC" value="0" />
+            <enum name="BENGALI" value="1" />
+            <enum name="CHINESE_SIMPLIFIED" value="2" />
+            <enum name="CHINESE_TRADITIONAL" value="3" />
+            <enum name="ENGLISH" value="4" />
+            <enum name="FRENCH" value="5" />
+            <enum name="GERMAN" value="6" />
+            <enum name="GUJARATI" value="7" />
+            <enum name="HEBREW" value="8" />
+            <enum name="HINDI" value="9" />
+            <enum name="INDONESIA" value="10" />
+            <enum name="JAPANESE" value="11" />
+            <enum name="KOREAN" value="12" />
+            <enum name="PORTUGUESE" value="13" />
+            <enum name="RUSSIAN" value="14" />
+            <enum name="SPANISH" value="15" />
+            <enum name="TURKISH" value="16" />
+            <enum name="UKRAINIAN" value="17" />
+        </attr>
+    </declare-styleable>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <!--RangeBar-->
+    <declare-styleable name="RangeSeekBar">
+        <attr name="absoluteMinValue" format="integer|float"/>
+        <attr name="absoluteMaxValue" format="integer|float"/>
+        <attr name="singleThumb" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SimpleRangeView">
+        <attr name="lineColor" format="color" />
+        <attr name="activeLineColor" format="color" />
+        <attr name="fixedLineColor" format="color" />
+        <attr name="tickColor" format="color" />
+        <attr name="activeTickColor" format="color" />
+        <attr name="fixedTickColor" format="color" />
+        <attr name="activeThumbColor" format="color" />
+        <attr name="activeFocusThumbColor" format="color" />
+        <attr name="fixedThumbColor" format="color" />
+
+        <attr name="labelColor" format="color" />
+        <attr name="activeLabelColor" format="color" />
+        <attr name="activeThumbLabelColor" format="color" />
+        <attr name="fixedLabelColor" format="color" />
+        <attr name="fixedThumbLabelColor" format="color" />
+
+        <attr name="activeFocusThumbAlpha" format="float" />
+
+        <attr name="lineThickness" format="dimension" />
+        <attr name="activeLineThickness" format="dimension" />
+        <attr name="fixedLineThickness" format="dimension" />
+
+        <attr name="activeThumbRadius" format="dimension" />
+        <attr name="activeThumbFocusRadius" format="dimension" />
+        <attr name="fixedThumbRadius" format="dimension" />
+        <attr name="tickRadius" format="dimension" />
+        <attr name="activeTickRadius" format="dimension" />
+        <attr name="fixedTickRadius" format="dimension" />
+        <attr name="labelMarginBottom" format="dimension" />
+        <attr name="labelFontSize" format="dimension" />
+        <attr name="minDistanceBetweenLabels" format="dimension" />
+        <attr name="innerRangePadding" format="dimension" />
+        <attr name="innerRangePaddingLeft" format="dimension" />
+        <attr name="innerRangePaddingRight" format="dimension" />
+
+        <attr name="start" format="integer" />
+        <attr name="end" format="integer" />
+        <attr name="startFixed" format="integer" />
+        <attr name="endFixed" format="integer" />
+        <attr name="count" format="integer" />
+        <attr name="minDistance" format="integer" />
+        <attr name="maxDistance" format="integer" />
+
+        <attr name="movable" format="boolean" />
+        <attr name="showFixedLine" format="boolean" />
+        <attr name="showTicks" format="boolean" />
+        <attr name="showActiveTicks" format="boolean" />
+        <attr name="showFixedTicks" format="boolean" />
+        <attr name="showLabels" format="boolean" />
+        <attr name="isRange" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomPriceRangeBar">
+        <attr name="barChartSelectedBackgroundColor" format="color" />
+        <attr name="barChartUnselectedBackgroundColor" format="color" />
+        <attr name="barChartSelectedLineColor" format="color" />
+        <attr name="barChartUnSelectedLineColor" format="color" />
+        <attr name="barActiveLineColor" format="color" />
+        <attr name="barLineColor" format="color" />
+        <attr name="barThumbColor" format="color" />
+        <attr name="barActiveTickRadius" format="dimension" />
+        <attr name="barActiveThumbColor" format="color" />
+    </declare-styleable>
+
+
+</resources>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bottom_bar_bg">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        app:cardMaxElevation="0dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingStart="3dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="3dp"
+            android:paddingBottom="7dp"
+            android:weightSum="5">
+
+
+            <LinearLayout
+                android:id="@+id/ll_property"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_property"
+                    android:layout_width="31dp"
+                    android:layout_height="31dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_nav_deselect_properties" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_nav_property"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/properties"
+                    android:textColor="@color/quantum_grey"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_project"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.10"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_project"
+                    android:layout_width="31dp"
+                    android:layout_height="31dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_nav_deselect_project" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_nav_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/new_projects"
+                    android:textColor="@color/quantum_grey"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_add_property"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_add_property"
+                    android:layout_width="31dp"
+                    android:layout_height="31dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/quantum_grey"
+                    app:srcCompat="@drawable/ic_add_property"
+                    app:tint="@color/quantum_grey" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_add_property"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/add_property"
+                    android:textColor="@color/quantum_grey"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_agents"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_nav_agent"
+                    android:layout_width="31dp"
+                    android:layout_height="31dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_nav_deselect_agent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_nav_agent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/agents"
+                    android:textColor="@color/quantum_grey"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_menu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_hamberger_menu"
+                    android:layout_width="31dp"
+                    android:layout_height="31dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_nav_deselect_menu" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_nav_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu"
+                    android:textColor="@color/quantum_grey"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/nav_icon_my_property_unselected" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottom_heart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/my_wishlist_image"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="3dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/bottom_heart" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/shortListedCount"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignEnd="@+id/my_wishlist_image"
+                    android:layout_marginEnd="-5dp"
+                    android:background="@drawable/cart_round_disable"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    tools:ignore="HardcodedText,SmallSp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/bottom_email" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/bottom_more" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/home_add_property_imb"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/bottom_bar_yellow"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

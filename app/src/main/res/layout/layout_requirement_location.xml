@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                tools:activity="com.paya.paragon.activity.dashboard.ActivityDashBoard"
+                tools:ignore="LabelFor">
+
+    <include layout="@layout/content_requirement_location"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_above="@+id/text_continue_requirement_location"/>
+
+    <TextView
+            android:id="@+id/text_continue_requirement_location"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:background="@color/menu_email"
+            android:gravity="center"
+            android:text="@string/continue_action"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+</RelativeLayout>

@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:focusableInTouchMode="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.paya.paragon.activity.dashboard.ProfileActivity"
+    tools:ignore="ContentDescription,LabelFor,UselessParent"
+    tools:showIn="@layout/activity_profile">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@color/colorPrimary">
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <com.paya.paragon.base.commonClass.CircularImageView
+                        android:id="@+id/iv_profile"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_centerInParent="true" />
+
+                    <ImageView
+                        android:id="@+id/iv_pencil"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/round_edit"
+                        android:padding="6dp"
+                        android:src="@drawable/ic_pencil" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_change_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_edit_text_yellow_solid"
+                android:gravity="center"
+                android:padding="@dimen/padding_small"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/change_password"
+                android:textAllCaps="false"
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/individual_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/first_name"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edit_text_white"
+                    android:elevation="0.5dp"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/last_name"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/edt_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edit_text_white"
+                    android:elevation="0.5dp"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/email"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edit_text_white"
+                    android:elevation="0.5dp"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/mobile_number"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:id="@+id/phone_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edit_text_white"
+                    android:elevation="0.5dp"
+                    android:orientation="horizontal">
+
+                    <com.paya.paragon.utilities.CountryCode.CountryCodePicker
+                        android:id="@+id/country_code_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/edt_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFFFF"
+                        android:gravity="center_vertical"
+                        android:hint="@string/phone"
+                        android:inputType="number"
+                        android:labelFor="@+id/editText_phone_edit_agent_profile"
+                        android:maxLength="15"
+                        android:maxLines="1"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/locality_info"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_locality_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edit_text_white"
+                    android:elevation="0.5dp"
+                    android:hint="@string/enter_a_location"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edt_locality_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edit_text_white"
+                    android:elevation="0.5dp"
+                    android:hint="@string/enter_a_location"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/locality"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edt_locality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edit_text_white"
+                    android:elevation="0.5dp"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/country"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/edt_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edit_text_white"
+                    android:elevation="0.5dp"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/emirates"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edt_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edit_text_white"
+                    android:elevation="0.5dp"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/city_text"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/edt_district"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edit_text_white"
+                    android:elevation="0.5dp"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/zip_postal_code"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edt_pin_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edit_text_white"
+                    android:elevation="0.5dp"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/address"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/edt_address1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_edit_text_white"
+                        android:elevation="0.5dp"
+                        android:gravity="top"
+                        android:lines="5"
+                        android:padding="10dp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/address_2"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/edt_address2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_edit_text_white"
+                        android:elevation="0.5dp"
+                        android:gravity="top"
+                        android:lines="5"
+                        android:padding="10dp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/gender"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-5dp"
+                    android:drawablePadding="0dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="@string/male"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="@string/female"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/agency_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company_name"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/edt_company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edit_text_white"
+                    android:elevation="0.5dp"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/full_name"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/edt_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edit_text_white"
+                    android:elevation="0.5dp"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/main_phone_number"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:id="@+id/agent_phone_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edit_text_white"
+                    android:elevation="0.5dp"
+                    android:orientation="horizontal">
+
+                    <com.paya.paragon.utilities.CountryCode.CountryCodePicker
+                        android:id="@+id/cc_agent_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/edt_main_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:enabled="false"
+                        android:hint="@string/phone"
+                        android:inputType="number"
+                        android:labelFor="@+id/editText_phone_edit_agent_profile"
+                        android:maxLength="13"
+                        android:maxLines="1"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/secondary_phone_number"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edit_text_white"
+                    android:elevation="0.5dp"
+                    android:layoutDirection="ltr"
+                    android:orientation="horizontal">
+
+                    <com.paya.paragon.utilities.CountryCode.CountryCodePicker
+                        android:id="@+id/spcc_agent_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center" />
+
+                    <EditText
+                        android:id="@+id/edt_sec_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/phone"
+                        android:inputType="number"
+                        android:labelFor="@+id/editText_phone_edit_agent_profile"
+                        android:maxLength="13"
+                        android:maxLines="1"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/location"
+                    android:textColor="@color/text_color_search"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <androidx.cardview.widget.CardView style="@style/CardViewRounded">
+
+                        <TextView
+                            android:id="@+id/text_location_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/arrow_down"
+                            android:drawablePadding="20dp"
+                            android:gravity="center_vertical"
+                            android:minHeight="43dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:text="@string/select"
+                            android:textColor="@color/text_light_color"
+                            android:textSize="15sp" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@color/yellow"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:text="@string/update_profile"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/alert_background_white"
+              android:gravity="center"
+              android:orientation="vertical"
+              tools:ignore="HardcodedText">
+
+    <TextView
+            android:id="@+id/alertTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="15dp"
+            android:drawableTop="@drawable/icon_warning"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="25dp"
+            android:text="@string/are_you_sure_want_to_logout"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingEnd="40dp"
+            android:paddingStart="40dp"
+            android:layout_marginTop="10dp"
+            tools:ignore="DisableBaselineAlignment">
+
+        <TextView
+                android:id="@+id/alert_ok_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/background_button_yellow"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingEnd="25dp"
+                android:paddingStart="25dp"
+                android:paddingTop="10dp"
+                android:text="@string/ok"
+                android:textColor="@color/text_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        <TextView
+                android:id="@+id/alert_cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/bg_edit_text_yellow_border"
+                android:gravity="end|center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingEnd="25dp"
+                android:paddingStart="25dp"
+                android:paddingTop="10dp"
+                android:text="@string/cancel"
+                android:textColor="@color/text_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

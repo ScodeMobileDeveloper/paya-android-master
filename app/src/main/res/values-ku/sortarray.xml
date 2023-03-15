@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sortList">
+        <item>گرنگتریین</item>
+        <item>نرخ لە بەرزەوە بۆ نزم</item>
+        <item>نرخ لە نزمەوە بۆ بەرز</item>
+        <item>لیست لە نوێترینەوە</item>
+        <item>لیست لە کۆنترینەوە</item>
+        <item>ڕووبەر لە بەرزەوە بۆ نزم</item>
+        <item> ڕووبەر لە نزمەوە بۆ بەرز</item>
+    </string-array>
+    <string-array name="sortValue">
+        <item>featured/orderby/desc</item>
+        <item>price/orderby/desc</item>
+        <item>price/orderby/asc</item>
+        <item>date/orderby/desc</item>
+        <item>date/orderby/asc</item>
+        <item>sqrft/orderby/desc</item>
+        <item>sqrft/orderby/asc</item>
+    </string-array>
+</resources>

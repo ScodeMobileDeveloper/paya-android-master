@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/alert_background_white"
+    android:gravity="center"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/alert_title_no_internet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center"
+        android:drawableTop="@drawable/icon_alert"
+        android:drawablePadding="15dp"
+        android:text="No internet Connection !\nPlease try after sometime"
+        android:textColor="#E2574C"
+        android:gravity="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FFFFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/alert_ok_no_internet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/alert_text_no_internet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/ok"
+                android:gravity="center"
+                android:background="@drawable/background_button_yellow"
+                android:textColor="@color/text_color"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

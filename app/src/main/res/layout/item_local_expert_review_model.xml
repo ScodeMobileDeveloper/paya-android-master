@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/layout_item_local_expert_review"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:background="@drawable/edit_text_underline_gray"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        tools:ignore="UselessParent">
+
+
+        <ImageView
+            android:id="@+id/userProfilePicture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_user" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/reviewer_name_item_expert_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Indigo John"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/review_time_item_expert_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="on 14 Mar, 2016 at 11:30 am"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/rating_bar_item_local_expert"
+            android:layout_width="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:theme="@style/RatingBar"
+            android:layout_height="wrap_content"
+            android:stepSize="1"
+            android:rating="5"
+            android:isIndicator="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/review_title_item_expert_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good Merchant"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/review_content_item_expert_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you want to accept card payments from your customers – and virtually every business needs to these days to remain."
+            android:textSize="13sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</LinearLayout>

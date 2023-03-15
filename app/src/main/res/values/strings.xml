@@ -1,0 +1,741 @@
+<resources>
+    <!--<string name="app_name">HomeOwnersDirect</string>-->
+    <string name="app_name">Paya</string>
+    <!--<string name="app_name_full">HomeOwners\nDirect.com</string>-->
+    <string name="empowering">Empowering</string>
+    <string name="currency_symbol">$</string>
+    <string name="iqd_currency_symbol">IQD</string>
+    <string name="empowering_tag_line">You\'re in control of your property deal</string>
+    <string name="zero_commission">Zero Commission</string>
+    <string name="zero_commission_tag_line">With no agents, you can make big savings</string>
+    <string name="other_service">Other Services</string>
+    <string name="expert_community_tag_line">Created to support you, on your terms</string>
+    <string name="buy">Buy</string>
+    <string name="rent">Rent</string>
+    <string name="in">in</string>
+    <string name="properties_for">Properties for</string>
+    <string name="projects_for">Projects</string>
+
+    <!--Previous facebook account Id  ==> 1018828741789603 (this is related to ISPG)-->
+    <!--Now it is updated to JAFF PAYA company account id.-->
+    <string name="facebook_app_id">274323400634313</string>
+
+    <string name="local_experts">Local Experts</string>
+    <string name="location">Location</string>
+    <string name="add_more">Add More</string>
+    <string name="property_type">Property Type</string>
+    <string name="select_property_type">Select property type</string>
+    <string name="bedrooms">Bedrooms</string>
+    <string name="bedrooms_star">Bedrooms <font color='#ff3333'>*</font></string>
+    <string name="bedroom_s">Bedroom(s)</string>
+    <string name="select">Select</string>
+    <string name="city">City</string>
+    <string name="city_loc">City (Baghdad, Erbil, Basrah,…)</string>
+    <string name="select_city">Select City</string>
+    <string name="search">Search</string>
+    <string name="save_search">Save Search</string>
+    <string name="featured">Featured</string>
+    <string name="make_an_offer">Make An Offer</string>
+    <string name="contact">Contact</string>
+    <string name="call">Call</string>
+    <string name="type">Type</string>
+    <string name="average_price">Average Price</string>
+    <string name="read_more">Read More....</string>
+    <string name="more_specifications">More Specifications</string>
+
+    <string name="property_deals_you_control">Find your dream house without leaving yours</string>
+    <string name="google_places_api_key">AIzaSyBC3Js9FC_wmUUrub7jJ9lJNVGsf9-KnvA</string>
+    <string name="similar_properties">Similar Properties</string>
+    <string name="login">Login</string>
+    <string name="saved_searches">Saved Searches</string>
+    <string name="my_properties">My Properties</string>
+
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="submit">Submit</string>
+    <string name="or_sign_in_with">OR Login in with</string>
+    <!-- <string name="i_accept_terms_of_use_and_privacy_policy">I accept HomeOwners Direct\'s Terms of Use and Privacy
+         Policy
+     </string>-->
+    <string name="i_accept_terms_of_use_and_privacy_policy">I accept Paya\'s Terms of Use and Privacy
+        Policy
+    </string>
+    <string name="forgot_your_password">Forgot your Password?</string>
+    <string name="remember_your_password_sing_in">Back to Login</string>
+    <string name="any">All</string>
+    <string name="ok">OK</string>
+    <string name="properties">Properties</string>
+    <string name="projects">Projects</string>
+    <string name="shortlisted">Favorites</string>
+    <string name="posted_requirements">Posted Requirements</string>
+    <string name="my_plan">My Plan</string>
+    <string name="sold_out">Sold Out</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="current_plan">Current Plan:</string>
+    <string name="upgrade_now">Upgrade Now</string>
+    <string name="purchased_on">Purchased on:</string>
+    <string name="expires_on">Expires on:</string>
+    <string name="features">Features</string>
+    <string name="subscribe_unsubscribe">Subscribe / Unsubscribe</string>
+    <string name="save_search_alert">Save Search Alert</string>
+    <string name="newsletters">Newsletters</string>
+    <string name="message">Message:</string>
+    <string name="posted_date">Posted Date:</string>
+    <string name="scheduled_date">Scheduled Date:</string>
+    <string name="selected_slot">Selected Slot:</string>
+    <string name="property_status">Property Status</string>
+    <string name="area">Area</string>
+    <string name="read_less">Read Less..</string>
+    <string name="less_specifications">Less Specifications</string>
+    <string name="select_user_type">Select User Type</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_address">Email (optional)</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="subscribe_newsletters">Subscribe Newsletters</string>
+    <string name="already_have_an_account_log_in">Already have an account..? LOGIN</string>
+    <!--<string name="new_to_findhome_sign_up">New to HomeOwnersDirect.com ?</string>-->
+    <string name="new_to_findhome_sign_up">New to Paya ?</string>
+
+    <string name="no_result_found">Results not found !</string>
+    <string name="select_a_country">Select a county</string>
+    <string name="search_hint">Search&#8230;</string>
+    <string name="mobile_number">Mobile</string>
+    <string name="contact_owner">Contact</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone">Phone</string>
+    <string name="mortgage_info_property_contact_owner">Would you like to receive information on the best mortgage rates
+        for this property ?
+    </string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_and_conditions_and_privacy_policy">I agree to Terms and Conditions and Privacy Policy</string>
+    <string name="offer_price_aed">Offer Price (AED)</string>
+    <string name="comments">Comments</string>
+    <string name="thank_you">Thank You</string>
+    <string name="thank_you_for_contact">Thank you for contacting</string>
+    <string name="make_an_offer_success_message">Your offer is successfully submitted to the Landlord/Seller</string>
+    <string name="contact_owner_success_message">Your enquiry has been submitted &#38; We will get back to you soon
+    </string>
+    <string name="enquiry">Enquiry</string>
+    <string name="price">Price</string>
+    <string name="add_price">Add Price</string>
+    <string name="current_status">Current Status</string>
+    <string name="current_status_col">Current Status:</string>
+    <string name="property_specification">Property Specification</string>
+    <string name="offer_price">Offer Price:</string>
+    <string name="logout">Logout</string>
+    <string name="saved_on">Saved on</string>
+    <string name="zero">0</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="dummy_number">10</string>
+    <string name="rent_term">Rent Term</string>
+    <string name="add_video">Add Video</string>
+    <string name="amenities_optional">Amenities(optional)</string>
+    <string name="amenities">Amenities</string>
+
+    <string name="name">Name</string>
+    <string name="bathrooms">BathRooms</string>
+    <string name="gallery_image_upload_specification">*Upload images with size - Width: 618px X Height: 412px \n Allowed
+        Type: jpg, png, jpeg, gif, svg
+    </string>
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+    <string name="skip">SKIP</string>
+    <string name="default_country_code">(IN) +91</string>
+    <string name="my_account">My Account</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="buy_property">Buy Property</string>
+    <string name="rent_property">Rent Property</string>
+    <string name="add_property">Add Property</string>
+    <string name="post_requirement">Post Requirement</string>
+    <string name="new_projects">New Projects</string>
+    <string name="agents">Agents</string>
+    <string name="calculator">Calculator</string>
+    <string name="sell_post_ad">Sell / Post Free Ad</string>
+    <string name="post_your_requirement">Post your Requirement</string>
+    <string name="add_to_email">Add To Email Basket</string>
+    <string name="share">Share</string>
+    <string name="search_hint_text">Search by Location</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="forgot_password_text">Enter the mobile number associated with your account, and we will send you the OTP to reset your password:
+    </string>
+    <string name="password_update">Password updated successfully</string>
+    <string name="service_not_available">Service Not Available</string>
+    <string name="invalid_lat_long_used">Invalid Lat Long Used</string>
+    <string name="no_address_found">No Address Found</string>
+    <string name="address_found">Address Found</string>
+    <string name="i_want_to">I want to</string>
+    <string name="sell">Sell</string>
+    <string name="sale">Sale</string>
+
+    <string name="enter_property_name">Enter Property Name</string>
+    <string name="post_your_property_in_simple_steps">Post your Property in simple steps</string>
+    <string name="locality_info">Locality Info</string>
+    <string name="enter_a_location">Enter a location</string>
+    <string name="didn_t_find_your_locality_click_here">Didn\'t find your Locality? Click Here</string>
+    <string name="locality">Locality</string>
+    <string name="district">District</string>
+    <string name="country">Country</string>
+    <string name="zip_postal_code">Zip/Postal Code</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="enter_locality">Enter Locality</string>
+    <string name="enter_state">Enter State</string>
+    <string name="enter_country">Enter Country</string>
+    <string name="enter_zip_postal_code">Enter Zip/Postal Code</string>
+    <string name="enter_latitude">Enter latitude</string>
+    <string name="enter_longitude">Enter Longitude</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="ready_to_move">Ready to move</string>
+    <string name="under_construction">Under Construction</string>
+    <string name="address_1">Address</string>
+    <string name="address_2">Address 2</string>
+    <string name="yearly_rent">Rent</string>
+    <string name="overview">Overview</string>
+    <string name="gallery_images">Gallery Images</string>
+    <string name="upload_your_photos_here">Upload your photos here</string>
+    <string name="upload_your_blueprint_here">Upload your blueprint here</string>
+    <string name="video">Video</string>
+    <string name="view_360">360 Degree View</string>
+    <string name="copy_url">Copy paste your 360 degree URL here</string>
+    <string name="youtube_url">Youtube URL</string>
+    <string name="please_enter_youtube_url">Please enter youtube url</string>
+    <string name="video_status">Video Status</string>
+    <string name="title">Title</string>
+    <string name="update">Update</string>
+    <string name="change">Change</string>
+    <string name="enter_video_title">Enter video title</string>
+    <string name="enter_video_overview">Enter video overview</string>
+    <string name="cancel">Cancel</string>
+    <!--<string name="post_requirement_tag">Give us a complete description of your requirement. We will match it with the
+        best available choices on homeownersdirect.com
+    </string>-->
+    <string name="post_requirement_tag">Give us a complete description of your requirement. We will match it with the
+        best available choices on Paya
+    </string>
+    <string name="i_would_like_to">I would like to</string>
+    <string name="got_it">Got it !</string>
+    <string name="what_type_of_property_is_it">What type of property you need?</string>
+    <string name="type_of_property">Type of Property</string>
+    <string name="budget">Price</string>
+    <string name="continue_action">Continue</string>
+    <string name="which_location_you_want_to_find_your_property">Which location\nyou want to find your property ?
+    </string>
+    <string name="state">State</string>
+    <string name="select_city_area">Select City/Area</string>
+    <string name="follow">Follow</string>
+    <!-- <string name="contact_builder">Contact Builder</string>-->
+    <string name="contact_builder">Contact Developer</string>
+    <string name="contact_agent">Contact Agent</string>
+    <string name="location_selector_manual">Difficult to find your Locality info? Click here to enter manually</string>
+    <string name="requirement_features_title">What are the features\nyou want?</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="email">Email</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="title_requirement_contact">Please tell about yourself?</string>
+    <string name="title_requirement_otp">Enter OTP send to your mobile\nnumber</string>
+    <string name="title_login_otp">One Time Password (OTP) has been sent to your mobile number</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="otp_hint">1234</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="verify">Verify</string>
+    <string name="resend_text">If you have not receiving SMS with in 2 minutes, please click Resend OTP</string>
+    <string name="requirement_confirmation_message">Kindly review the details before publishing</string>
+    <string name="click_to_modify">Click to Modify</string>
+    <string name="confirm">Confirm</string>
+    <string name="property_for">Property for</string>
+    <string name="type_details">Type Details</string>
+    <string name="price_range">Price Range</string>
+    <string name="user_details">User Details</string>
+    <string name="location_to_list">Location to list</string>
+    <string name="property_features">Property Features</string>
+    <string name="thank_you_comment">Your requirement has been submitted successfully. After verification, matching
+        properties will be send to your email inbox.
+    </string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="faq">FAQ</string>
+    <string name="choose_plan">Choose Plan</string>
+    <string name="all_platinum_text">All Platinum features with \n dedicated active support executive \n for your
+        property management
+    </string>
+    <string name="days">Days</string>
+    <string name="nos">Nos</string>
+    <string name="properties_enquiry">My Properties</string>
+    <string name="settings">Settings</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="i_am_following_agents">I\'m Following Agents</string>
+    <string name="properties_enquiries">Properties/Enquiries</string>
+    <string name="sms">SMS</string>
+    <string name="save">Save</string>
+    <string name="home">Home</string>
+    <!-- <string name="findhome_terms_and_conditions">I agree to HomeOwners Direct terms and conditions</string>-->
+    <string name="findhome_terms_and_conditions">I agree to Paya terms and conditions</string>
+    <string name="no_budget">Budget not specified</string>
+    <string name="valid_data">You must enter valid data</string>
+    <string name="register">Register</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_locations">Map</string>
+    <string name="billing_information">Billing Information</string>
+    <string name="video_information">Video Information</string>
+    <string name="password_validation_characters">Password should be Minimum 5 and maximum 50 characters length.(Allowed
+        symbols #, _ , ! )
+    </string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_profile_image_browse">ProfileImageBrowseActivity</string>
+    <string name="title_activity_profile_image_crop">ProfileImageCropActivity</string>
+    <string name="select_filters">Select Filters</string>
+    <string name="logo">Logo</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="registered_email_mobile_number">Registered Mobile Number</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="reset_filter">Reset Filter</string>
+    <string name="possession_status">Possession Status</string>
+    <string name="enter_search_title">Enter Search Title</string>
+    <string name="set_alert">Set Alert</string>
+    <string name="save_your_search_for_future_alerts">Save your search for future alerts</string>
+    <string name="alert_text_search_saved">You have successfully saved the alert. You can access this through your
+        dashboard
+    </string>
+    <string name="property_submitted_alert">Your property request has been send to admin, and we will get back to you soon.
+We will review your post and publish it soon.
+    </string>
+    <string name="resume">Resume</string>
+    <string name="save_search_delete_message">Saved Search deleted successfully</string>
+    <string name="change_plan">Change Plan</string>
+    <string name="upgrade_plan">Upgrade Plan</string>
+    <string name="change_plan_alert_title">Credits remaining in your subscribed plans</string>
+    <string name="change_plan_message_alert">Please select a plan and click
+        ‘confirm’ to change the property plan.
+    </string>
+    <string name="duration">Duration :</string>
+    <string name="photo_uploading">Photo Uploading:</string>
+    <string name="video_uploading">Video Uploading:</string>
+    <string name="property_description_plan">Property Description:</string>
+    <string name="upgrade_plan_message">Not Published, please upgrade your plan</string>
+    <string name="no_record_found">No record found!</string>
+    <string name="my_subscriptions">My Subscriptions</string>
+    <string name="active">Active</string>
+    <string name="view_payment_details">View Payment Details</string>
+    <string name="enquiry_count_balance">Enquiry \nCount Balance</string>
+    <string name="remaining_credit">Remaining \nCredit</string>
+    <string name="property_posted">Property \nPosted</string>
+    <string name="subscribed_date">Subscribed Date:</string>
+    <string name="about_us">About Us</string>
+    <string name="experience_and_skills">Experience and Skills</string>
+    <string name="no_records_alert_listing">No record found!\nPlease refine your search</string>
+    <string name="local_information">Local Information</string>
+    <string name="properties_posted">Properties Posted:</string>
+    <string name="deals_in">Deals in:</string>
+    <string name="address">Address</string>
+    <string name="website">Website:</string>
+    <string name="premium">Premium</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="plan_title">Plan Title:</string>
+    <string name="select_a_state">Select a State</string>
+    <string name="select_a_district">Select a District</string>
+    <string name="payment_information">Payment Information</string>
+    <string name="add_reward_point">Add Reward Point</string>
+    <string name="sub_total_amount">Sub Total Amount</string>
+    <string name="colon">:</string>
+    <string name="taxable_amount">Taxable Amount</string>
+    <string name="reward_point_amount">Reward Point Amount</string>
+    <string name="payment_options">Payment Options</string>
+    <string name="choose_payment_method">Choose Payment Method</string>
+    <string name="please_choose_any_payment_method">Please choose any payment method</string>
+    <string name="agent">Agent:</string>
+    <!-- <string name="title_home_page">HOMEOWNERS\nDIRECT.COM</string>-->
+    <string name="title_home_page">Paya</string>
+    <string name="login_register">Sign In</string>
+
+    <string name="free">Free</string>
+    <string name="request_property">Request Property</string>
+    <string name="savings_calculator">Calculator</string>
+    <string name="how_much_my_home_worth">Home much is your home worth</string>
+    <string name="contact_us">+964 7501297777</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="sort_by">SORT BY</string>
+    <string name="filter">FILTER</string>
+    <string name="upgrade_your_plan">Upgrade Your Plan</string>
+    <string name="get_better">Get better visibility of your future</string>
+    <string name="address_colon">Address :</string>
+    <string name="gallery">Gallery</string>
+    <string name="videos">Videos</string>
+    <string name="remove_photo">Remove photo</string>
+    <string name="profile_photo">Profile photo</string>
+    <string name="featured_listing">Featured Listing</string>
+    <string name="property_description">Property Description</string>
+    <string name="floor_plan">Blueprint</string>
+    <string name="similar_projects">Similar Projects</string>
+    <string name="select_profile_image">Select a profile image</string>
+    <string name="back">Back</string>
+    <string name="specification">Specification</string>
+    <string name="location_map">Location Map</string>
+    <string name="neighbourhood">Neighborhood</string>
+    <string name="posted_on_col">Posted on: </string>
+    <string name="negotiable"> (Negotiable) </string>
+    <string name="id_col">ID: </string>
+    <string name="have_any_text">Have any property to Sell / Rent ?</string>
+    <string name="let_our_text">Let our advisors help you in Selling /   Renting your property.</string>
+    <string name="price_on_request">Price on Request</string>
+    <string name="special_offer">Special offer</string>
+    <string name="unit_details_floor_plans"><![CDATA[Unit Details & Blueprints]]></string>
+    <string name="your_name">Your Name</string>
+    <string name="your_email_address">Your Email Address</string>
+    <string name="after_expert_rating_heading">Thank you for  submitting your review.</string>
+    <string name="after_expert_rating_body">Marchant Review will be posted after the admin approval</string>
+    <string name="established_in">Established in</string>
+
+    <string name="my_questions">My Questions</string>
+    <string name="viewing_request">Viewing Request</string>
+    <string name="open_house">Open House</string>
+    <string name="unified_tenancy_contract">Unified Tenancy Contract</string>
+    <string name="download_pdf">Download PDF</string>
+    <string name="date">Date: </string>
+    <string name="owner_name">Owner Name: </string>
+    <string name="lesser_name">Lessor Name: </string>
+    <string name="end_date">End Date</string>
+    <string name="add_slot">Add Slot</string>
+    <string name="start_date1">Start Date:</string>
+    <string name="end_date1">End Date:</string>
+    <string name="select_property">Select Property</string>
+    <string name="start_date">Start Date</string>
+
+    <string name="ask_your_question">Ask your Question</string>
+    <string name="emirates">Emirate</string>
+    <string name="city_text">City</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="is_the_property_mortgaged">Is the property Mortgaged ?</string>
+    <string name="select_bank">Select Bank</string>
+    <!--<string name="no_email_only">No, Email Only</string>-->
+    <string name="no_email_only">Email</string>
+    <string name="do_you_want_to_be_contacted_by_an_estate_agent">Do you want to be contacted by an estate agent ?</string>
+    <string name="how_would_you_like_to_be_contacted">How would you like to be contacted?</string>
+    <string name="rented_without_notice">Rented Without Notice</string>
+    <string name="vacant_in_60_days">Vacant in 60 days</string>
+    <string name="no_response">No Response</string>
+    <string name="press_back_again">Press Back again to Exit.</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="failed">Failed</string>
+    <string name="email_required">Email required.</string>
+    <string name="enter_full_name">Enter full name.</string>
+    <string name="valid_phone_number">Enter valid phone number</string>
+    <string name="please_enter_name">Please enter Name</string>
+    <string name="please_enter_valid_name">Please enter a valid name</string>
+    <string name="please_enter_email_address">Please enter Email Address</string>
+    <string name="please_enter_valid_email_address">Please enter valid Email Address</string>
+    <string name="please_enter_phone_number">Please enter Phone Number</string>
+    <string name="valid_mobile_number">Please enter a valid mobile number</string>
+    <string name="please_enter_enquiry">Please enter enquiry</string>
+    <string name="failed_to_shortlist">Failed to Shortlist</string>
+    <string name="property_deleted">Property Deleted Successfully</string>
+    <string name="please_write_your_question">Please write your question</string>
+    <string name="no_slots_listed">No Slots Listed</string>
+    <string name="slot_successfully_added">Slot successfully added.</string>
+    <string name="slot_already_exist">Slot already exist.</string>
+    <string name="select_start_date">Select a Start Date</string>
+    <string name="select_end_date">Select an End Date</string>
+    <string name="deleted">Deleted</string>
+    <string name="no_enquiries">No Enquiries Found</string>
+    <string name="status_changed">Status Changed</string>
+    <string name="no_saved_searches">No Saved Searches</string>
+    <string name="no_pdf_file_found">No PDF file found.</string>
+    <string name="select_category">Select a Category</string>
+    <string name="please_enter_first_name">Please Enter First Name</string>
+    <string name="please_enter_last_name">Please Enter Last Name</string>
+    <string name="enter_billing_address">Enter billing Address</string>
+    <string name="please_select_country">Please select country</string>
+    <string name="please_select_state">Please select state</string>
+    <string name="please_select_district">Please select District</string>
+    <string name="payment_method_validation">Please choose any payment method</string>
+    <string name="find_location_details">Can\'t find your location details</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="select_location_details">Select location details</string>
+    <string name="failed_update">Failed to update profile details</string>
+    <string name="please_enter_address">Please enter address</string>
+    <string name="enter_valid_first_name">Please enter a valid first name</string>
+    <string name="enter_valid_last_name">Please enter a valid last name</string>
+    <string name="please_enter_offer_price">Please Enter Offer Price</string>
+    <string name="comment_required">Comment Required</string>
+    <string name="accept_terms_conditions">Please accept Terms and conditions</string>
+    <string name="list_your_business">List Your Business</string>
+    <string name="business_name_col">Business Name:</string>
+    <string name="select_city_col">Select City:</string>
+    <string name="select_category_col">Select Category:</string>
+    <string name="contact_name_col">Contact Name:</string>
+    <string name="email_address_col">Email Address:</string>
+    <string name="enter_your_email_phone">Please enter your registered email</string>
+    <string name="invalid_username_password">Invalid username or password</string>
+    <string name="enter_password">Enter password</string>
+    <string name="your_phone">Enter your Phone number</string>
+    <string name="please_enter_otp">Please Enter OTP</string>
+    <string name="enter_your_password">Please enter your password</string>
+    <string name="password_without_space">Please enter a Password without space</string>
+    <string name="confirm_your_password">Please confirm your password</string>
+    <string name="password_mismatch">Password Mismatch</string>
+    <string name="You_must_agree_terms">You must agree with the Terms of Use and Privacy Policy</string>
+    <string name="complete_action_using">Complete action using</string>
+    <string name="install_filemanages">Please install any File Manager to complete the task</string>
+    <string name="valid_property_image">Please upload a valid property image</string>
+    <string name="enter_property_title">Please Enter Property Title</string>
+    <string name="enter_property_price">Please Enter Price</string>
+    <string name="select_currency_type">Please select the currency type</string>
+    <string name="select_currency_terms">Please select Price per m² or Total price based on the price </string>
+    <string name="enter_property_description">Please Enter Property Description</string>
+    <string name="enter_business_name">Enter business name</string>
+    <string name="meter_square">m²</string>
+    <string name="offer_ends">Offer ends in :</string>
+    <string name="all_locations">All Locations</string>
+    <string name="enter_city">Enter city</string>
+    <string name="enter_category">Enter category</string>
+    <string name="please_select_rating">Please select your rating</string>
+    <string name="please_write_comment">Please Write a Comment</string>
+    <string name="please_enter_review_title">Please enter review title</string>
+    <string name="likes">Likes</string>
+    <string name="unlikes">Dislikes</string>
+    <string name="answers">Answers</string>
+    <string name="rate_now">Rate Now</string>
+    <string name="review_title">Review title</string>
+    <string name="write_your_review">Write your review</string>
+    <string name="your_rating">Your rating</string>
+    <string name="by_text">By</string>
+    <string name="about">About</string>
+    <string name="property_name_star">Property title (house, Sale, 200 m, Bakhtiary) <font color='#ff3333'>*</font></string>
+    <string name="property_type_star">Property Type <font color='#ff3333'>*</font></string>
+    <string name="property_posted_by">Property Posted by <font color='#ff3333'>*</font></string>
+    <string name="choose_plan_star">Choose Plan <font color='#ff3333'>*</font></string>
+    <string name="description_star">Other Details</string>
+    <string name="price_star">Price <font color='#ff3333'>*</font></string>
+    <string name="number_of_cheques">Number Of Cheques</string>
+    <string name="enter_youtube_video_url">Enter YouTube video URL</string>
+    <string name="video_uploaded_successfully">Video saved successfully</string>
+    <string name="video_updated_successfully">Video Updated Successfully</string>
+    <string name="video_deleted_successfully">Video Deleted Successfully</string>
+    <string name="user_cancelled">User Cancelled</string>
+    <string name="success">Success</string>
+    <string name="download_voucher">Download Voucher</string>
+    <string name="new_password">New Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="current_password">Current password</string>
+    <string name="onwards">onwards</string>
+    <string name="up_to">Up to</string>
+    <string name="services">Services</string>
+    <string name="new_listing">Newest Listing</string>
+    <!-- <string name="i_accept_findhome_s_terms_of_use_and_privacy_policy">I accept HomeOwners Direct\'s Terms of Use and Privacy
+         Policy
+     </string>-->
+    <string name="date_valid">Slot Length Can Not Exceed 24 Hrs</string>
+    <string name="your_profile_updated">Your profile has been updated successfully</string>
+    <string name="failed_update_profile">Failed to update profile details</string>
+    <string name="delete_this_image">Are you sure you want to delete this photo?</string>
+    <string name="exit_without_update">Your changes have not been saved, do you want to exit without updating?</string>
+    <string name="select_any_location">Please select any Location</string>
+    <string name="select_any_property_type">Please select property type</string>
+    <string name="no_enquiry">No. of Enquiry:</string>
+    <string name="no_of_view">No. of View:</string>
+    <string name="plan_upgraded_successfully">Your property plan has been upgraded successfully</string>
+    <string-array name="userTypeList">
+        <item>Buyer</item>
+        <item>Seller</item>
+        <item>Tenant</item>
+        <item>Landlord</item>
+    </string-array>
+    <string name="enter_360_url">Please enter 360 view url</string>
+    <string name="mortgage_required">Is Mortage Required? </string>
+    <string name="plan_duration">Duration</string>
+    <string name="plan_free_home">Free Home Worth Estimation</string>
+    <string name="plan_portal_list">International Portal Listing</string>
+    <string name="virtual_tour">Virtual Tour</string>
+    <string name="featured_list">Featured Listing</string>
+    <string name="profession_list">Professional Description</string>
+    <string name="community_manager">Personel Community Manager</string>
+    <string name="plan_photography">Professional Photography</string>
+    <string name="valid_url">Please enter a valid url for 360 degree view</string>
+    <string name="same_plan_update_alert">Sorry, you have already subscribed the same plan for the property. Choose a different plan.</string>
+    <string name="highlights">Highlights</string>
+    <string name="voucher_download">Voucher Download</string>
+    <string name="listing_detail_property_id">Listing Detail property Id : </string>
+    <string name="registered_user_name">Registered User Name :</string>
+    <string name="mobile_number_thankyou">Mobile Number :</string>
+    <string name="do_not_disclose">Do not disclose personal information including but not limited to financial and personal details on the internet. Always refer to our privacy policy and Terms and Conditions. For problems and reporting </string>
+    <string name="valid_youtube_url">Enter valid url</string>
+    <string name="select_state_null">Click to load State</string>
+    <string name="hint_city_null">Click to load City</string>
+    <string name="phone_and_email">Phone &amp; Email</string>
+    <string name="select_a_category">Select a Category</string>
+    <string name="i_agree_to_the">I agree to the </string>
+    <string name="terms_and_conditions">"Terms and Conditions"</string>
+    <string name="text_of">" of "</string>
+    <string name="please_choose_other_locality">Please choose any other locality</string>
+    <string name="are_you_sure_to_unfollow_this_agency">Are you sure to un-follow this agency ?</string>
+    <string name="are_you_sure_want_to_delete_it">Are you sure want to delete it?</string>
+    <string name="are_you_sure_to_remove_this_requirment">Are you sure to remove this Requirement?</string>
+    <string name="are_you_sure_to_delete_this_search">Are you sure to delete this Search ?</string>
+    <string name="are_you_sure_want_to_delete">Are you sure you want to Delete?</string>
+    <string name="are_you_sure_to_remove_this_project">Are you sure to remove this Project ?</string>
+    <string name="are_you_sure_to_remove_this_property">Are you sure to remove this Property ?</string>
+    <string name="are_you_sure_want_to_logout">Are you sure you want to logout ?</string>
+    <string name="bath">Bath</string>
+    <string name="bed">Bed</string>
+    <string name="blueprint">Blueprint</string>
+    <string name="rented">Rented</string>
+    <string name="will_be_ready_soon">Will be Ready Soon</string>
+    <string name="possession_date_col">Possession Date:</string>
+    <string name="about_the_property">About The Property</string>
+    <string name="alert">Alert</string>
+    <string name="min_price_with_value">Min: $%s</string>
+    <string name="max_price_with_value">Max: $%s</string>
+    <string name="paya_real_estate_application">Paya Real Estate Application</string>
+    <string name="choose_language">Choose the Language</string>
+    <string name="choose_location">Choose the Location</string>
+    <string name="english">English</string>
+    <string name="arabic">عربى</string>
+    <string name="kurdish">کوردی</string>
+    <string name="text_update">Update Now</string>
+    <string name="text_app_update_title">New Version Available</string>
+    <string name="text_force_update_message">There is a newer version available for download! Please update to continue</string>
+    <string name="text_soft_update_message">A new version is found in Play store. Please update for better usage.</string>
+    <string name="text_skip">Skip</string>
+    <string name="text_paya_notification_title">PAYA Notification</string>
+    <string name="text_paya_notification_body">Received new Notification</string>
+    <string name="text_kurdish_language_inprogress_message">Kurdish language is under testing. Soon it will be available</string>
+    <string name="text_add_picture">Add Picture</string>
+    <string name="text_add_blue_print">Add Blueprint</string>
+    <string name="text_upload">Upload</string>
+    <string name="city_with_details">City (Baghdad, Ebil, Basra etc. )</string>
+    <string name="enter_city_with_details">Enter City (Baghdad, Ebil, Basra etc. )</string>
+    <string name="text_more_spec">Add More Details</string>
+    <string name="text_less_spec">Less Details..</string>
+    <string name="enter_attr_phone_no">Please Enter PhoneNo in Spec</string>
+    <string name="enter_attr_area">Please Enter Area in Spec</string>
+    <string name="enter_attr_bathroom">Please Select No.of.Bathroom in Spec</string>
+    <string name="enter_attr_kitchen">Please Select No.of.Kitchen in Spec</string>
+    <string name="enter_attr_living_room">Please Select No.of.Living Room in Spec</string>
+    <string name="enter_attr_floor_number">Please select Floor Number</string>
+    <string name="mothly_rent_with_star">The Monthly Rental Price<font color='#ff3333'>*</font></string>
+    <string name="mothly_rent">The Monthly Rental Price (USD)</string>
+    <string name="please_try_after_some_times">Please try after some times</string>
+    <string name="next">Next</string>
+    <string name="enter_attr_bed_room_spec">Please Select No.of.Bedroom in Spec</string>
+    <string name="please_select_atleast_amenities">Please select atleast one amenities</string>
+    <string name="menu">Menu</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="add_your_business">Add Your Business</string>
+    <string name="for_buy">for Buy</string>
+    <string name="for_rent">for Rent</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="text_agent_properties_count">%d properties</string>
+    <string name="text_count_agent_founds">%d Agents Found (%s)</string>
+    <string name="text_search_agent">Search Agent…</string>
+    <string name="search_by_city_buy_rent_hint">Search (City, Buy, Rent…)</string>
+    <string name="sort_by_asc">sortby asc</string>
+    <string name="sort_by_desc">sortby desc</string>
+    <string name="property_count">Property Count</string>
+    <string name="sort_by_high_low">sortby high to low</string>
+    <string name="sort_by_low_high">sortby low to high</string>
+    <string name="social_media">SocialMedia</string>
+    <string name="sub_agents">Branches</string>
+    <string name="agent_properties">Agent Properties</string>
+    <string name="fragment_image_trans">Shared transaction name</string>
+    <string name="load_more">Load more</string>
+    <string name="agent_property_price">$ %s</string>
+
+    <string name="city_864">Al Anbar</string>
+    <string name="city_2558">Al Diwaniyah</string>
+    <string name="city_1358">Al Qadisiyyah</string>
+    <string name="city_1188">Babylon</string>
+    <string name="city_41">Baghdad</string>
+    <string name="city_861">Basrah</string>
+    <string name="city_2283">Dhi Qar</string>
+    <string name="city_1555">Diyala</string>
+    <string name="city_57">Duhok</string>
+    <string name="city_44">Erbil</string>
+    <string name="city_1459">Halabja</string>
+    <string name="city_829">Karbala</string>
+    <string name="city_869">Kirkuk</string>
+    <string name="city_1284">Maysan</string>
+    <string name="city_881">Najaf</string>
+    <string name="city_58">Nineveh</string>
+    <string name="city_1268">Salahdin</string>
+    <string name="city_56">Sulaymaniyah</string>
+    <string name="city_1604">Wasit</string>
+
+    <string name="optional">Optional</string>
+    <string name="city_address">City/Address</string>
+    <string name="thanks_will_publish_soon">Thank you, your property will be published soon</string>
+    <string name="your_property_published_successfully">Your property is published successfully</string>
+
+    <string name="property_of_agent">Properties:</string>
+    <string name="contact_paya">Contact Us</string>
+
+
+    <string name="individual">Individual</string>
+    <string name="agency">Agency</string>
+
+
+    <string name="usd">USD</string>
+    <string name="iqd">IQD</string>
+
+
+    <string name="priceinM">Price per m²</string>
+    <string name="total_price">Total Price</string>
+
+    <string name="company_name">Company Name</string>
+    <string name="agency_full_name">Full Name</string>
+    <string name="main_phone_number">Main Phone Number</string>
+    <string name="phone_number_1">Phone Number 1</string>
+    <string name="phone_number_2">Phone Number 2</string>
+
+    <string name="secondary_phone_number">Secondary Phone Number</string>
+    <string name="agency_location">Location</string>
+    <string name="agency_logo">Agency Logo</string>
+
+    <string name="adp_specification">Specification</string>
+
+    <string name="password_changed_successfully">Password changed successfully</string>
+
+    <string name="please_enter_company_name">Please enter company name</string>
+    <string name="validate_company_name">Please enter a valid company name</string>
+    <string name="please_enter_fullname">Please enter a name</string>
+    <string name="validate_name">Please enter a valid name</string>
+    <string name="validate_secondary_no">Please enter a valid secondary phone number</string>
+
+    <string name="company_logo">Company Logo</string>
+    <string name="upload">Uploading</string>
+
+    <string name="per">per</string>
+
+    <string name="welcome">Welcome</string>
+
+    <string name="otp_success"> OTP has been send to your registered mobile number</string>
+    <string name="invalid_otp">Invalid OTP</string>
+    <string name="otp_verified_successfully">OTP Verified Successfully</string>
+    <string name="req_otp">Request OTP</string>
+    <string name="enter_the_new_number">Enter the new number</string>
+    <string name="phone_no_verity">Your phone number is not verified. Please verify it!</string>
+    <string name="phone_no_update">You have to verify your phone number to update!</string>
+
+    <string name="number_not_found">Number not found call Paya team</string>
+    <string name="email_not_found">Email not found please call Paya team</string>
+    <string name="call_paya_team">Call Paya team</string>
+    <string name="all_nbh">All Neighbourhoods</string>
+    <string name="text_no_results_found">No results found</string>
+    <string name="text_get_help_from_paya_team">Get help from Paya team</string>
+    <string name="call_us">Call us</string>
+    <string name="text_whatsapp">Contact Us</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="delete_account_title">Are you sure you want to delete your account? This will permanently erase your account.</string>
+    <string name="text_pls_select_city">Please select the city</string>
+
+</resources>

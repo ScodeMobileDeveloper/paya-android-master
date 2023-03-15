@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/spinner_selection_any"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:drawablePadding="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:text="@string/any"/>
+
+    <ExpandableListView
+        android:id="@+id/list_view_prop_type_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:childDivider="@null"
+        android:childIndicator="@null"
+        android:divider="@null"
+        android:fitsSystemWindows="true"
+        android:nestedScrollingEnabled="false"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@null"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:smoothScrollbar="true">
+
+    </ExpandableListView>
+
+</LinearLayout>

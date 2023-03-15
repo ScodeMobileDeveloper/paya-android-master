@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_sort_frag"
+        android:icon="@drawable/ic_sort_amal"
+        android:title="sort"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_filter"
+        android:icon="@drawable/ic_filter_amal"
+        android:title="filter"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_map"
+        android:icon="@drawable/ic_map_amal"
+        android:title="map"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_list"
+        android:icon="@drawable/ic_order"
+        android:title="List"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/save_search"
+        android:icon="@drawable/save_searches"
+        android:title="Save Search"
+        app:showAsAction="always"/>
+
+
+
+
+</menu>

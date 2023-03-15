@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/detail_menu_favourite"
+        android:icon="@drawable/menu_icon_like_off"
+        android:title="Clear"
+        android:visible="false"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/detail_menu_share"
+        android:icon="@drawable/share"
+        android:title="Clear"
+        app:showAsAction="always"/>
+
+</menu>

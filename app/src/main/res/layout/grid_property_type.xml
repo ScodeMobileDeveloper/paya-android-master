@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="1.1dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+    <LinearLayout
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="4dp"
+            android:paddingEnd="7dp"
+            android:paddingStart="7dp"
+            android:paddingTop="4dp">
+
+        <ImageView
+            android:visibility="gone"
+                android:id="@+id/category_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/home_loan"
+                tools:ignore="ContentDescription"/>
+
+        <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="2"
+                android:minLines="2"
+                android:text=""
+                android:textColor="#4d4f52"
+                android:textSize="12sp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

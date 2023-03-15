@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <androidx.cardview.widget.CardView
+        style="@style/CardViewStyleLogin"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/edit_text_underline_gray"
+        app:cardElevation="0dp"
+        app:cardMaxElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:id="@+id/image_item_property_listing"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/no_image_placeholder"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:id="@+id/layout_top_item_property_shortlisted"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1.8"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <TextView
+                            android:id="@+id/name_item_property_shortlisted"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="3"
+                            android:text="DD Highway"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/builder_name_item_property_shortlisted"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:maxLines="1"
+                        android:text="4 bedrrom villa with excellent"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/property_area_item_property_shortlisted"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:maxLines="1"
+                        android:text="3 Bed, Villa, 1975 Aq. Ft."
+                        android:textSize="13sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/property_key_item_property_shortlisted"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Golden Mile, Palm Jumeirah"
+                        android:textSize="13sp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/delete_item_property_shortlisted"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="10dp"
+                    android:padding="3dp"
+                    app:srcCompat="@drawable/ic_delete"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layout_bottom1_item_property_shortlisted"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:orientation="vertical"
+                        android:paddingEnd="5dp"
+                        android:paddingStart="5dp">
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/property_details_item_property_shortlisted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:maxLines="1"
+                            android:text="3 Bed, Villa, 1975 Aq. Ft."
+                            android:textSize="13sp"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/property_possession_item_property_shortlisted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:maxLines="1"
+                            android:text="3 Bed, Villa, 1975 Aq. Ft."
+                            android:textSize="13sp"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout_bottom2_item_property_shortlisted"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|top"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:gravity="top"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/property_price_item_property_shortlisted"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:maxLines="1"
+                                android:text="50 Lac"
+                                android:textColor="@color/text_color"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/property_price_average_item_property_shortlisted"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:maxLines="1"
+                                android:text="300 Per Sq. Ft."
+                                android:textSize="13sp"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/icon_call_item_property_shortlisted"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="5dp"
+                            android:src="@drawable/call"
+                            android:visibility="gone"
+                            tools:ignore="ContentDescription" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

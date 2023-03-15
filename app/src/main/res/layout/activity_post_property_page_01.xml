@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.paya.paragon.viewmodel.PostPropertyViewModel" />
+
+        <variable
+            name="callBack"
+            type="com.paya.paragon.viewmodel.PostPropertyViewModel.PostPropertyViewModelCallBack" />
+
+        <import type="com.paya.paragon.utilities.CountryCode.CountryCodePicker">
+
+        </import>
+
+    </data>
+
+
+    <LinearLayout
+        android:id="@+id/ll_01_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="false"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineProvider="none"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize"
+                android:background="@color/colorPrimary"
+                app:contentInsetStartWithNavigation="0dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="start"
+                    android:textColor="@color/mainTextColorGray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ScrollView
+            android:id="@+id/sv_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background"
+            android:overScrollMode="never"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:nestedScrollingEnabled="false"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/post_your_property_in_simple_steps"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+                <!--Property Purpose Type-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/i_want_to"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_purpose_post_property"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-5dp"
+                    android:layout_marginTop="4dp"
+                    android:drawablePadding="0dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_button_sell_post_property"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorAccent"
+                        android:onClick="@{()->viewModel.sellPropertyChecked()}"
+                        android:text="@string/sell"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_rent_post_property"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:buttonTint="@color/colorAccent"
+                        android:onClick="@{()->viewModel.rentPropertyChecked()}"
+                        android:text="@string/rent"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+                <!--Property Posted by-->
+                <LinearLayout
+                    android:id="@+id/ll_pproperty_posted_by"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_property_posted_by_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/property_posted_by"
+                        android:textSize="14sp" />
+
+                    <androidx.cardview.widget.CardView style="@style/CardViewStyleLogin">
+
+                        <TextView
+                            android:id="@+id/selector_text_sub_agent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:background="@android:color/transparent"
+                            android:drawableEnd="@drawable/arrow_down"
+                            android:drawablePadding="20dp"
+                            android:gravity="center_vertical"
+                            android:hint="@string/select"
+                            android:minHeight="40dp"
+                            android:onClick="@{()->viewModel.onPropertyPostBySpinnerClick()}"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/gray"
+                            android:textSize="16sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <com.paya.paragon.classes.CustomSpinner
+                        android:id="@+id/spnr_sub_agent"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <!--Property Type-->
+                <LinearLayout
+                    android:id="@+id/propertytype_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:inputType="text"
+                        tools:ignore="LabelFor" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/property_type_star"
+                        android:textSize="14sp" />
+
+                    <androidx.cardview.widget.CardView style="@style/CardViewRounded">
+
+                        <TextView
+                            android:id="@+id/text_property_type_post_property"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:drawableEnd="@drawable/arrow_down"
+                            android:drawablePadding="20dp"
+                            android:gravity="center_vertical"
+                            android:minHeight="40dp"
+                            android:onClick="@{()->viewModel.onPropertyTypeSpinnerClick()}"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:text="@string/select"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/property_type_dropdown_lay"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_below="@+id/propertytype_lay"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:id="@+id/all_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:drawablePadding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:text="@string/any"/>
+
+                    <ExpandableListView
+                        android:id="@+id/list_view_prop_type_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:childDivider="@null"
+                        android:childIndicator="@null"
+                        android:divider="@null"
+                        android:fitsSystemWindows="true"
+                        android:nestedScrollingEnabled="false"
+                        android:dividerHeight="1dp"
+                        android:groupIndicator="@null"
+                        android:overScrollMode="never"
+                        android:scrollbars="vertical"
+                        android:smoothScrollbar="true">
+
+                    </ExpandableListView>
+
+                </LinearLayout>
+                <!--Property Plan-->
+                <LinearLayout
+                    android:id="@+id/layout_plan_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:paddingTop="2dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/choose_plan_star"
+                        android:textSize="14sp" />
+
+                    <androidx.cardview.widget.CardView style="@style/CardViewRounded">
+
+                        <TextView
+                            android:id="@+id/selector_property_plan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableEnd="@drawable/arrow_down"
+                            android:drawablePadding="20dp"
+                            android:gravity="center_vertical"
+                            android:hint="@string/select"
+                            android:minHeight="40dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/gray"
+                            android:textSize="16sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <com.paya.paragon.classes.CustomSpinner
+                        android:id="@+id/spinner_property_plan"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center" />
+
+                </LinearLayout>
+                <!--Property Name-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/property_name_star"
+                        android:textSize="14sp" />
+
+                    <androidx.cardview.widget.CardView style="@style/CardViewRounded">
+
+
+                        <EditText
+                            android:id="@+id/edit_property_title_post_property"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/enter_property_name"
+                            android:inputType="textCapSentences"
+                            android:minHeight="40dp"
+                            android:onTextChanged="@{(text, start, before, count) -> viewModel.onPropertyTitleTextChanged(text)}"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:ignore="LabelFor" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <!--Property Current Status-->
+                <LinearLayout
+                    android:id="@+id/layout_possession"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/current_status"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <RadioGroup
+                        android:id="@+id/rg_sell_property_status"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-5dp"
+                        android:drawablePadding="0dp"
+                        android:orientation="vertical"
+                        android:paddingTop="5dp">
+
+                        <RadioButton
+                            android:id="@+id/rb_uc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:buttonTint="@color/colorAccent"
+                            android:checked="true"
+                            android:onClick="@{()->viewModel.underConstructionChecked()}"
+                            android:text="@string/under_construction"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_rtm_s"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:buttonTint="@color/colorAccent"
+                            android:onClick="@{()->viewModel.readyToMoveForSellChecked()}"
+                            android:text="@string/ready_to_move"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_rtd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:buttonTint="@color/colorAccent"
+                            android:onClick="@{()->viewModel.rentedChecked()}"
+                            android:text="@string/rented"
+                            android:textSize="16sp" />
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/rg_rent_property_status"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-5dp"
+                        android:drawablePadding="0dp"
+                        android:orientation="vertical"
+                        android:paddingTop="5dp"
+                        android:visibility="gone">
+
+                        <RadioButton
+                            android:id="@+id/rb_rtm_r"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:buttonTint="@color/colorAccent"
+                            android:onClick="@{()->viewModel.readyToMoveForRentChecked()}"
+                            android:text="@string/ready_to_move"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_wrs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:buttonTint="@color/colorAccent"
+                            android:onClick="@{()->viewModel.willBeReadySoonChecked()}"
+                            android:text="@string/will_be_ready_soon"
+                            android:textSize="16sp" />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+                <!--Property Price-->
+
+                <!--Property Mortgaged-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/text_property_price_post_property"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price_star"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_price_currency"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-5dp"
+                        android:layout_marginTop="4dp"
+                        android:drawablePadding="0dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radio_button_usd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorAccent"
+                            android:onCheckedChanged="@{(compoundButton,checked)->viewModel.usdChecked(compoundButton,checked)}"
+                            android:text="@string/usd"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_button_iqd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:buttonTint="@color/colorAccent"
+                            android:onCheckedChanged="@{(compoundButton,checked)->viewModel.iqdChecked(compoundButton,checked)}"
+                            android:text="@string/iqd"
+                            android:textSize="16sp" />
+
+                    </RadioGroup>
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/CardViewRounded"
+                        android:layout_marginTop="3dp">
+
+                        <EditText
+                            android:id="@+id/edit_property_price_post_property"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:background="@android:color/transparent"
+                            android:digits="0123456789"
+                            android:hint="@string/add_price"
+                            android:inputType="numberDecimal"
+                            android:minHeight="40dp"
+                            android:onTextChanged="@{(text, start, before, count) -> viewModel.onPropertyPriceTextChanged(text)}"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:ignore="LabelFor" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_price_type"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radio_button_priceperM2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorAccent"
+                            android:onCheckedChanged="@{(compoundButton,checked)->viewModel.priceinMChecked(compoundButton,checked)}"
+                            android:text="@string/priceinM"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_button_total_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:buttonTint="@color/colorAccent"
+                            android:onCheckedChanged="@{(compoundButton,checked)->viewModel.totalPriceChecked(compoundButton,checked)}"
+                            android:text="@string/total_price"
+                            android:textSize="16sp" />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_mortgaged_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/is_the_property_mortgaged"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_mortgaged"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-5dp"
+                        android:layout_marginTop="4dp"
+                        android:drawablePadding="0dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radio_button_yes_mortgaged"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorAccent"
+                            android:checked="true"
+                            android:onClick="@{()->viewModel.onYesMotgagedClick()}"
+                            android:text="@string/yes"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_button_no_mortgaged"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:buttonTint="@color/colorAccent"
+                            android:checked="true"
+                            android:onClick="@{()->viewModel.onNoMotgagedClick()}"
+                            android:text="@string/no"
+                            android:textSize="16sp" />
+
+                    </RadioGroup>
+
+                    <!--Bank-->
+                    <LinearLayout
+                        android:id="@+id/ll_select_bankLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/select_bank"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <androidx.cardview.widget.CardView style="@style/CardViewRounded">
+
+                            <Button
+                                android:id="@+id/select_bank"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:background="@android:color/transparent"
+                                android:drawableEnd="@drawable/arrow_down"
+                                android:gravity="center_vertical"
+                                android:minHeight="40dp"
+                                android:onClick="@{()->viewModel.onClickSelectBank()}"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp"
+                                android:text="@string/select_bank"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                tools:ignore="LabelFor" />
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!--description-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/description_star"
+                        android:textSize="14sp" />
+
+                    <androidx.cardview.widget.CardView style="@style/CardViewRounded">
+
+                        <EditText
+                            android:id="@+id/edit_property_overview_post_property"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:background="@android:color/transparent"
+                            android:inputType="text"
+                            android:minHeight="80dp"
+                            android:onTextChanged="@{(text, start, before, count) -> viewModel.onPropertyDescriptionTextChanged(text)}"
+                            android:paddingStart="10dp"
+                            android:paddingTop="5dp"
+                            android:paddingEnd="10dp"
+                            android:paddingBottom="5dp"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            tools:ignore="LabelFor" />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <!--Phone Number One-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/phone_number_1"
+                    android:textSize="14sp" />
+                <androidx.cardview.widget.CardView
+                   style="@style/CardViewRounded">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:layoutDirection="ltr"
+                        android:orientation="horizontal">
+
+                        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                            android:id="@+id/cc_phone_no_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:gravity="center"/>
+                        <EditText
+                            android:id="@+id/et_phone_no_one"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:textAlignment="viewStart"
+                            android:onTextChanged="@{(text, start, before, count) -> viewModel.onPhoneNoOneTextChanged(text)}"
+                            android:background="@android:color/transparent"
+                            android:hint="7XXXXXXXXX"
+                            android:inputType="number"
+                            android:maxLength="11"
+                            android:maxLines="1"
+                            tools:ignore = "LabelFor"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!--Phone Number 2-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/phone_number_2"
+                    android:textSize="14sp" />
+                <androidx.cardview.widget.CardView
+                    style="@style/CardViewRounded">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="ltr"
+                        android:minHeight="40dp"
+                        android:orientation="horizontal">
+
+                        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                            android:id="@+id/cc_phone_no_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:gravity="center" />
+
+                        <EditText
+                            android:id="@+id/et_phone_no_two"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:hint="7XXXXXXXXX"
+                            android:inputType="number"
+                            android:maxLength="11"
+                            android:maxLines="1"
+                            android:background="@android:color/transparent"
+                            android:onTextChanged="@{(text, start, before, count) -> viewModel.onPhoneNoTwoTextChanged(text)}"
+                            android:textAlignment="viewStart" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_title_specifications"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!--property Specification-->
+                <LinearLayout
+                    android:id="@+id/layout_recycler_specifications_post_property"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toTopOf="@id/tr_bottom_nav"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/app_bar_layout">
+
+                    <LinearLayout
+                        android:id="@+id/layout_recycler_bedrooms_post_property"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bedrooms_star"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_bedrooms_content_post_property"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:nestedScrollingEnabled="false"
+                            android:overScrollMode="never" />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_specifications_content_post_property"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:nestedScrollingEnabled="false" />
+
+                    <TextView
+                        android:id="@+id/tv_more_spec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/text_more_spec"
+                        android:textSize="14sp"
+                        android:textStyle="italic"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+        <!--next-->
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:onClick="@{()->viewModel.onPage01NextClick()}"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/next"
+            android:textAllCaps="true"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</layout>

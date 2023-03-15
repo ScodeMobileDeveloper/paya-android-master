@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingEnd="15dp"
+    android:paddingStart="15dp">
+
+    <TextView
+        android:id="@+id/text_title_requirement_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_above="@+id/card_edit_otp_requirement_otp"
+        android:text="@string/title_requirement_otp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_edit_otp_requirement_otp"
+        style="@style/CardViewStyleLogin"
+        android:layout_above="@+id/text_verify_requirement_otp"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/edit_otp_requirement_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/enter_otp"
+            android:inputType="number"
+            android:maxLength="8"
+            android:minHeight="40dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:ignore="LabelFor" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/text_verify_requirement_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/menu_email"
+        android:gravity="center"
+        android:layout_above="@+id/text_resend_otp_requirement_otp"
+        android:minHeight="40dp"
+        android:text="@string/verify"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_resend_otp_requirement_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:paddingBottom="5dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="5dp"
+        android:text="@string/resend_otp"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

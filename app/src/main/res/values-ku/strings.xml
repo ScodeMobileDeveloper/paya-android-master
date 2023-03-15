@@ -1,0 +1,721 @@
+<resources>
+
+    <string name="app_name">پایە</string>
+
+    <string name="empowering">تواناسازی</string>
+    <string name="currency_symbol">$</string>
+    <string name="iqd_currency_symbol">د.ع</string>
+    <string name="empowering_tag_line">تۆ كۆنتڕۆڵی مامەڵەكردن بە موڵكەكەتەوە دەكەیت</string>
+    <string name="zero_commission">هەقدەستی سفر</string>
+    <string name="zero_commission_tag_line">بە بێ بریكار، دەتوانیت پاشەكەوتی گەورە بكەیت</string>
+    <string name="other_service"> خزمەتگوزاریەکان</string>
+    <string name="expert_community_tag_line">درووست كراوە بۆ پشتگیریكردنی تۆ، بە پێی هەلومەرجەكانت</string>
+    <string name="buy">كڕین</string>
+    <string name="rent">کرێ</string>
+    <string name="in">لە</string>
+    <string name="properties_for">موڵک بۆ</string>
+    <string name="projects_for">پڕۆژه‌</string>
+    <string name="facebook_app_id">274323400634313</string>
+
+    <string name="local_experts">خزمەتگوزاریەکانی تر</string>
+    <string name="location"> پێگەی شوێنی کۆمپانیاکە دیاری بکە </string>
+    <string name="add_more">زیاتر زیاد بكە</string>
+    <string name="property_type">جۆری موڵک</string>
+    <string name="select_property_type">جۆری موڵك دیاری بكە</string>
+    <string name="bedrooms">ژووری نووستن</string>
+    <string name="bedroom_s">ژووری نووستن</string>
+    <string name="select"> دیاری بکە</string>
+    <string name="city">شار</string>
+    <string name="city_loc">شار (بەغدا، هەولێر، بەسرا،...)</string>
+    <string name="select_city">شار دیاری بكە</string>
+    <string name="search">گەڕان</string>
+    <string name="save_search">گەڕان خەزێنە بكە</string>
+    <string name="featured">Featured</string>
+    <string name="make_an_offer">ئۆفەرێك پێشكەش بكە</string>
+    <string name="contact">پەیوەندی</string>
+    <string name="call">پەیوەندی</string>
+    <string name="type">جۆر</string>
+    <string name="average_price">نرخی مامناوەند</string>
+    <string name="read_more">زیاتر بخوێنەرەوە…</string>
+    <string name="more_specifications">وردەكاریی زیاتر</string>
+
+    <string name="property_deals_you_control">بە بێ بەجێهێشتنی ماڵەكەی خۆت، خانووی خەونەكانت بدۆزەرەوە</string>
+    <string name="similar_properties"> موڵکی هاوشێوە</string>
+    <string name="login">چوونە ژوورەوە</string>
+    <string name="saved_searches">گەڕانە خەزێنەكراوەكان</string>
+    <string name="my_properties">موڵكەكانم</string>
+
+    <string name="enter_your_email">ئیمێڵەكەت داخڵ بكە</string>
+    <string name="submit">بڵاوکردن</string>
+    <string name="or_sign_in_with">یان بچۆرە ژوورەوە بە</string>
+    <string name="i_accept_terms_of_use_and_privacy_policy">من ڕازیم بە ڕێسا و یاساكانی پایا بۆ بەكارهێنان و سیاسەتی پاراستنی تایبەتمەندیی كەسی
+    </string>
+    <string name="forgot_your_password">ووشەی نهێنیت بیرچووە؟</string>
+    <string name="remember_your_password_sing_in">گەڕانەوە بۆ پەڕەی چوونەژوورەوە</string>
+    <string name="any">هەموو</string>
+    <string name="ok">بەڵێ</string>
+    <string name="properties">موڵکەکان</string>
+    <string name="projects">پرۆژەكان</string>
+    <string name="shortlisted">لیستی دڵخوازەکان</string>
+    <string name="posted_requirements">داواکارییە پۆستکراوەکان</string>
+    <string name="my_plan">پلانەكانم</string>
+    <string name="sold_out">فرۆشرا</string>
+    <string name="edit"> دەستکاری کردن</string>
+    <string name="delete">سڕینەوە</string>
+    <string name="current_plan">ئێستا پلانی:</string>
+    <string name="upgrade_now">هەنووكە سیستمەكەت بەرز بكەرەوە</string>
+    <string name="purchased_on">كڕدراوە لە:</string>
+    <string name="expires_on">بەسەرچوون :</string>
+    <string name="features">تایبەتمەندییەكان</string>
+    <string name="subscribe_unsubscribe">بەشداری كردن/ بەشداری نەكردن</string>
+    <string name="save_search_alert">ئاگاداركردنەوەی گەڕان خەزێنە بكە</string>
+    <string name="newsletters">هەواڵنامەكان</string>
+    <string name="message">نامە:</string>
+    <string name="posted_date">بەرواری پۆستكردن:</string>
+    <string name="scheduled_date">بەرواری بەرنامەداڕێژراو:</string>
+    <string name="selected_slot">سۆراخی دیاریكراو:</string>
+    <string name="property_status">ڕەوشی موڵك</string>
+    <string name="area">ڕووبەر</string>
+    <string name="read_less">کەمتر..</string>
+    <string name="less_specifications">ڕوونكردنەوەی كەمتر</string>
+    <string name="select_user_type">جۆری بەكارهێنەر دیاری بكە</string>
+    <string name="first_name">ناوی یەكەم</string>
+    <string name="last_name">ناوی کۆتایی</string>
+    <string name="email_address"> ئیمەیڵ (ئارەزوومەندانە)</string>
+    <string name="password"> ووشەی نهێنی</string>
+    <string name="confirm_password">ووشەی نهێنی نوێ دووپاتبکەرەوە</string>
+    <string name="subscribe_newsletters">بەشداری بکە لە هەواڵنامەکان</string>
+    <string name="already_have_an_account_log_in">پێشتر هەژمارت هەیە؟ بچۆرە ژوورەوە</string>
+    <string name="new_to_findhome_sign_up">نوێی لە پایا؟</string>
+
+    <string name="no_result_found">ئەنجامەكان نەدۆرانەوە !</string>
+    <string name="select_a_country">پارێزگایەك دیاری بكە</string>
+    <string name="search_hint">Search&#8230;</string>
+    <string name="mobile_number"> ژمارە مۆبایل</string>
+    <string name="contact_owner">پەیوەندی بکە</string>
+    <string name="full_name">ناوی تەواو</string>
+    <string name="phone">تەلەفۆن</string>
+    <string name="mortgage_info_property_contact_owner">ئایا تۆ حەز دەكەیت زانیاریت لەسەر باشترین پلەبەندییەكانی ڕەهنەوە پێ بگات بۆ ئەم موڵكە؟
+    </string>
+    <string name="privacy_policy">سیاسەتی تایبەتیەکان</string>
+
+    <string name="terms_and_conditions_and_privacy_policy">من ڕازیم بە ڕێسا و یاساكان و سیاسەتی پاراستنی تایبەتمەندیی كەسی</string>
+    <string name="offer_price_aed">نرخی پێشنیازكراو (AED)</string>
+    <string name="comments">سەرنجەكان</string>
+    <string name="thank_you">سوپاس</string>
+    <string name="thank_you_for_contact">سوپاس بۆ پەیوەندیكردن</string>
+    <string name="make_an_offer_success_message">پێشنیازەكەت بە سەركەوتوویی نێردرا بۆ خاوەنماڵ/فرۆشیار</string>
+    <string name="contact_owner_success_message">پرسوجۆكەت بە سەركەوتوویی تۆمار كرا &#38; ئێمەیش بە زووترین كات بۆت دەگەڕێنینەوە    </string>
+    <string name="enquiry">پرسوجۆ</string>
+    <string name="price">نرخ</string>
+    <string name="add_price">نرخ زیاد بكە</string>
+    <string name="current_status">دۆخی ئێستا</string>
+    <string name="current_status_col">دۆخی ئێستا:</string>
+    <string name="property_specification">وردەكاریی موڵك</string>
+    <string name="offer_price">نرخی پێشنیازكراو:</string>
+    <string name="logout">چوونەدەرەوە لە سیستەم</string>
+    <string name="saved_on">خەزێنە كرا لەسەر</string>
+    <string name="zero">0</string>
+    <string name="pause">وچان</string>
+    <string name="play">لێدان</string>
+    <string name="dummy_number">10</string>
+    <string name="rent_term">ماوەی كرێ</string>
+    <string name="add_video">ڤیدیۆ زیاد بكە</string>
+    <string name="amenities">خزمەتگوزارییەکان</string>
+    <string name="amenities_optional">خزمەتگوزارییەکان (ئارەزومەندانە)</string>
+
+    <string name="name">ناو</string>
+    <string name="bathrooms">گەرماوەكان</string>
+    <string name="gallery_image_upload_specification">*وێنەکان دا بنێ بە قەبارەی – پانی: 618 پێکسڵ * بەرزی: 412 پێکسڵ
+جۆرە ڕێگەپێدراوەکان: jpg, png, jpeg, gif, svg
+</string>
+    <string name="daily">ڕۆژانە</string>
+    <string name="weekly">هەفتانە</string>
+    <string name="skip">پەڕاندن</string>
+    <string name="default_country_code">(IR) +964</string>
+    <string name="my_account">هەژمارەكەم</string>
+    <string name="dashboard">داشبۆرد</string>
+    <string name="buy_property">كڕینی موڵك</string>
+    <string name="rent_property">بەكرێدان/بەكرێگرتنی موڵك</string>
+    <string name="add_property">موڵکەکەت پۆست بکە</string>
+    <string name="post_requirement">پۆستكردنی داواكاری</string>
+    <string name="new_projects">پڕۆژە نوێیەکان</string>
+    <string name="agents">کۆمپانیاکان</string>
+    <string name="calculator">بژمێر</string>
+    <string name="sell_post_ad">فرۆشتن/ ڕیكلامی خۆڕایی پۆست بكە</string>
+    <string name="post_your_requirement">داواكارییەكانت پۆست بكە</string>
+    <string name="add_to_email">زیادی بكە بۆ سەبەتەی ئیمێڵ</string>
+    <string name="share">هاوبەشی پێكردن</string>
+    <string name="search_hint_text"> گەڕان بە پێی پێگەی شوێنی​</string>
+    <string name="reset_password">دانانى ووشه‌ی نهێنی نوێ</string>
+    <string name="forgot_password_text">ژمارەی مۆبایلی هەژمارەکەت بنووسە، کۆدی سڕینەوەی ووشەی نهێنیت پێ دەگات
+    </string>
+    <string name="password_update">ووشەی نهێنی گۆڕدرا</string>
+
+    <string name="service_not_available">خزمەتگوزاری بەردەست نییە</string>
+    <string name="invalid_lat_long_used">هێڵی پانی و درێژی بەكارهێنراو ناكارایە</string>
+    <string name="no_address_found">هیچ ناونیشانێك نەدۆزرایەوە</string>
+    <string name="address_found">ناونیشانەكە دۆزرایەوە</string>
+    <string name="i_want_to">موڵکەکە بۆ</string>
+    <string name="sell">فرۆشتن</string>
+    <string name="sale">فرۆشتن </string>
+    <string name="enter_property_name">ناوی موڵك داخڵ بكە</string>
+    <string name="post_your_property_in_simple_steps">بە چەند هەنگاوێكی سادە موڵكەكەت پۆست بكە</string>
+    <string name="locality_info">زانیاریی هەڵكەوتەی شوێنی</string>
+    <string name="enter_a_location">پێگەیەكی شوێنی داخڵ بكە</string>
+    <string name="didn_t_find_your_locality_click_here">هەڵكەوتەی شوێنییەكەت نەدۆزییەوە؟ كرتە لێرە بكە</string>
+    <string name="locality">هەڵكەوتەی شوێنی</string>
+    <string name="district">مەڵبەند</string>
+    <string name="country">وڵات</string>
+    <string name="zip_postal_code">Zip/كۆدی پۆستە</string>
+    <string name="latitude">هێڵی پانی</string>
+    <string name="longitude">هێڵی درێژی</string>
+    <string name="enter_locality">هەڵكەوتەی شوێنی داخڵ بكە</string>
+    <string name="enter_state">پارێزگا داخڵ بكە</string>
+    <string name="enter_country">وڵات داخڵ بكە</string>
+    <string name="enter_zip_postal_code">Zip/كۆدی پۆستە داخڵ بكە</string>
+    <string name="enter_latitude">هێڵی پانی داخڵ بكە</string>
+    <string name="enter_longitude">هێڵی درێژی داخڵ بكە</string>
+    <string name="upcoming">داهاتوو</string>
+    <string name="ready_to_move">ئامادەیە</string>
+    <string name="under_construction"> لە درووسکردندایە</string>
+    <string name="address_1">ناونیشان</string>
+    <string name="address_2">ناونیشان 2</string>
+    <string name="yearly_rent">كرێ</string>
+    <string name="overview">كورتەیەك</string>
+    <string name="gallery_images">وێنەكانی گەلەری</string>
+    <string name="upload_your_photos_here">لێرەوە وێنەكانت بار بكە</string>
+    <string name="upload_your_blueprint_here">نەخشەی گشتی لێرە دا بنێ</string>
+    <string name="video">گرتەی ڤیدیۆیی</string>
+    <string name="view_360">دیمەنی 360 پلە</string>
+    <string name="copy_url">لێرەدا بەستەری 360 پلەكەت دابنێرەوە</string>
+    <string name="youtube_url">لینکی یوتیوب</string>
+    <string name="please_enter_youtube_url">تكایە بەستەری یوتوب داخڵ بكە</string>
+    <string name="video_status">دۆخی ڤیدیۆ</string>
+    <string name="title">تایتڵ</string>
+    <string name="update">بەڕۆژكردن</string>
+    <string name="change">گۆڕین</string>
+    <string name="enter_video_title">تایتڵی ڤیدیۆ داخڵ بكە</string>
+    <string name="enter_video_overview">كورتەیەك لەسەر ڤیدیۆ داخڵ بكە</string>
+    <string name="cancel">نەخێر</string>
+
+    <string name="post_requirement_tag">پێناسەیەكی تەواو لە داواكارییەكانتمان پێ بدە، ئێمە لەگەڵ باشترین هەڵبژاردەی بەردەست لە پايەدا هاوتای دەكەینەوە
+    </string>
+    <string name="i_would_like_to">من حەزدەكەم كە</string>
+    <string name="got_it">تێگەیشتم !</string>
+    <string name="what_type_of_property_is_it">تۆ چ جۆرە موڵكێكت پێویستە؟</string>
+    <string name="type_of_property">جۆری موڵك</string>
+    <string name="budget">نرخ</string>
+    <string name="continue_action">بەردەوام بە</string>
+    <string name="which_location_you_want_to_find_your_property">كام پێگەی شوێنییەت دەوێت بۆ دۆزینەوەی موڵكەكەت ؟
+    </string>
+    <string name="state">پارێزگا</string>
+    <string name="select_city_area">شار/ناوچە دیاری بكە</string>
+    <string name="follow">شوێنكەوتن</string>
+
+    <string name="contact_builder">پەیوەندیكردن بە عەقار</string>
+    <string name="contact_agent">پەیوەندیكردن بە دەڵاڵ</string>
+    <string name="location_selector_manual">دۆزینەوەی هەڵكەوتەی شوێنییەكەت زەحمەتە؟ كرتە لێرە بكە بۆ ئەوەی بە دەستی داخڵی بكەیت</string>
+    <string name="requirement_features_title">ئەو تایبەتمەندییانە كامانەن كە تۆ دەتەوێت؟</string>
+    <string name="enter_name">ناو داخڵ بكە</string>
+    <string name="email">ئیمێڵ</string>
+    <string name="whatsapp">وەتس ئەپ</string>
+    <string name="enter_email_address">ناونیشانی ئیمێڵ داخڵ بكە</string>
+    <string name="enter_mobile_number">ژمارە مۆبایل داخڵ بكە</string>
+    <string name="title_requirement_contact">تكایە زانیاری لە بارەی خۆتەوە بڵێ؟</string>
+    <string name="title_requirement_otp">ئەو تێپەڕەوشە یەكجار بەكارهێنراوە (OTP) داخڵ بكە كە دەنێردرێت بۆ ژمارە مۆبایلەكەت</string>
+    <string name="title_login_otp">تێپەڕەوشەی یەكجار بەكارهێنراو (OTP) نێردرا بۆ ژمارە مۆبایلەكەت</string>
+    <string name="enter_otp">تێپەڕەوشەی یەكجار بەكارهێنراو (OTP) داخڵ بكە</string>
+    <string name="resend_otp">دووبارە ناردنەوەی تێپەڕەوشەی یەكجار بەكارهێنراو (OTP)</string>
+    <string name="verify">پشتڕاستكردنەوە</string>
+    <string name="resend_text">ئەگەر لە ماوەی 2 خولەكدا كورتەنامەت پێ نەگەیشت، تكایە كرتە بكە لە دووبارە ناردنەوەی تێپەڕەوشەی یەكجار بەكارهێنراو (OTP)</string>
+    <string name="requirement_confirmation_message"> تکایە پێش بڵاوکردنەوە پێداچوونەوەیەک بکە بە وردەکارییەکاندا</string>
+    <string name="click_to_modify">كرتە بكە بۆ چاككردن</string>
+    <string name="confirm">دووپاتكردنەوە</string>
+    <string name="property_for">موڵك بۆ</string>
+    <string name="type_details">وردەكارییەكان بنووسەرەوە</string>
+    <string name="price_range">ڕادەی نرخ</string>
+    <string name="user_details">وردەكارییەكانی بەكارهێنەر</string>
+    <string name="location_to_list">پێگەی شوێنی بۆ لیست</string>
+    <string name="property_features">تایبەتمەندییەكانی موڵك</string>
+    <string name="thank_you_comment">داواكارییەكەت بە سەركەوتوویی تۆمار كرا. دوای پشتڕاستكردنەوە، موڵكە هاوتاكان دەنێردرێت بۆ بەشی هاتووی ئیمێڵەكەت.
+    </string>
+    <string name="back_to_home">گەڕانەوەی بۆ بەشی سەرەكی</string>
+    <string name="faq">FAQ</string>
+    <string name="choose_plan">پلان هەڵبژێرە</string>
+    <string name="all_platinum_text">All Platinum features with \n dedicated active support executive \n بۆ بەڕێوەبردنی موڵكەكەت
+    </string>
+    <string name="days">ڕۆژەكان</string>
+    <string name="nos">نەخێرەكان</string>
+    <string name="properties_enquiry">موڵكەكانم</string>
+    <string name="settings">ڕێكخستنەكان</string>
+    <string name="edit_profile">دەستكاریكردنی پرۆفایل</string>
+    <string name="i_am_following_agents">من شوێنی دەڵاڵەكان دەكەوم</string>
+    <string name="properties_enquiries">موڵكەكان/پرسوجۆكان</string>
+    <string name="sms">كورتەنامە</string>
+    <string name="save">دڵنیابوون</string>
+    <string name="home">پەڕەی سەرەكی</string>
+    <string name="findhome_terms_and_conditions">من ڕازیم بە یاسا و ڕێساكانی پایا</string>
+    <string name="no_budget">بودجە دەستنیشان نەكراوە</string>
+    <string name="valid_data">تۆ دەبێت داتای باوەڕپێكراو داخڵ بكەیت</string>
+    <string name="register">خۆت تۆمار بکە</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_locations">نەخشە (خەریتە)</string>
+    <string name="billing_information">زانیاریی پسووڵە</string>
+    <string name="video_information">زانیاریی ڤیدیۆ</string>
+    <string name="password_validation_characters">تێپەڕەوشە دەبێت بریتی بێت لە كەمترین 5 بۆ زۆرترین 50 كارەكتەر(هێما ڕێگەپێدراوەكان #, _ , ! )  </string>
+    <string name="title_activity_profile">چالاكیی پرۆفایل</string>
+    <string name="title_activity_profile_image_browse">ProfileImageBrowseActivity</string>
+    <string name="title_activity_profile_image_crop">ProfileImageCropActivity</string>
+    <string name="select_filters">فلتەر</string>
+    <string name="logo">لۆگۆ</string>
+    <string name="gender">ڕەگەز</string>
+    <string name="male">نێر</string>
+    <string name="female">مێ</string>
+    <string name="update_profile">گۆڕینی پڕۆفایل</string>
+    <string name="registered_email_mobile_number">ژمارە مۆبایلە بەشداربووەکان</string>
+    <string name="unfollow">شوێن نەكەوتن</string>
+    <string name="reset_filter">فلتەری نوێ</string>
+    <string name="possession_status">دۆخی خاوەندارێتی</string>
+    <string name="enter_search_title">تایتڵی گەڕان داخڵ بكە</string>
+    <string name="set_alert">ئاگاداركردنەوە دابنێ</string>
+    <string name="save_your_search_for_future_alerts">گەڕانەكانت خەزێنە بكە بۆ ئاگاداركردنەوەكانی داهاتوو</string>
+    <string name="alert_text_search_saved">تۆ بەسەركەوتوویی ئاگاداركردنەوەكەت خەزێنە كردووە. دەتوانی دەستت بگات بەم ئاگاداركردنەوەیە لە ڕێگەی داشبۆردەكەتەوە   </string>
+    <string name="property_submitted_alert">داواکاریەکەت بە سەرکەوتوویی وەرگیرا، دوای پێداچوونەوە بڵاو دەکرێتەوە</string>
+    <string name="resume">Resume</string>
+    <string name="save_search_delete_message">گەڕانە خەزێنەكراوەكە بە سەركەوتوویی ڕەش كرایەوە</string>
+    <string name="change_plan">گۆڕینی پلان</string>
+    <string name="upgrade_plan">بەرزكردنەوەی پلان</string>
+    <string name="change_plan_alert_title">كرێدیتەكان لە پلانە بەشداریكراوەكانتدا ماونەتەوە</string>
+    <string name="change_plan_message_alert">تكایە پلانێك دیاری بكە و كرتە بە لە "دووپاتكردنەوە" بۆ گۆڕینی پلانی موڵكەكە
+    </string>
+    <string name="duration">ماوە (كات) :</string>
+    <string name="photo_uploading">باركردنی وێنە:</string>
+    <string name="video_uploading">باركردنی گرتەی ڤیدیۆیی:</string>
+    <string name="property_description_plan">پێناسەی موڵك:</string>
+    <string name="upgrade_plan_message">بڵاو نەكرایەوە، تكایە پلانەكەت بەرز بكەرەوە</string>
+    <string name="no_record_found">هیچ تۆمارێك نەدۆزرایەوە!</string>
+    <string name="my_subscriptions">بەشداریكەرانم</string>
+    <string name="active">چالاك</string>
+    <string name="view_payment_details">پیشاندانی وردەكارییەكانی پارەدان</string>
+    <string name="enquiry_count_balance">باڵانسی حسابی پرسوجۆ</string>
+    <string name="remaining_credit">كرێدیتی ماوە</string>
+    <string name="property_posted">موڵك پۆست كرا</string>
+    <string name="subscribed_date">بەرواری بەشداریكردن:</string>
+    <string name="about_us">لە بارەی ئێمەوە</string>
+    <string name="experience_and_skills">ئەزموون و كارامەییەكان</string>
+    <string name="no_records_alert_listing">هیچ تۆمارێك نەدۆزرایەوە! تكایە گەڕانەكەت بپاڵێوە</string>
+    <string name="local_information">زانیاریی ناوخۆیی</string>
+    <string name="properties_posted">موڵكە پۆستكراوەكان:</string>
+    <string name="deals_in">مامەڵەكان لە:</string>
+    <string name="address">ناونیشان</string>
+    <string name="website">وێبسایت:</string>
+    <string name="premium">Premium</string>
+    <string name="upgrade">بەرزكردنەوە</string>
+    <string name="total_amount">بڕی كۆی گشتی</string>
+    <string name="plan_title">تایتڵی پلان:</string>
+    <string name="select_a_state">پارێزگایەك دیاری بكە</string>
+    <string name="select_a_district">مەڵبەندێك دیاری بكە</string>
+    <string name="payment_information">زانیاریی پارەدان</string>
+    <string name="add_reward_point">پاداشت (بەخشش) دیاری بكە</string>
+    <string name="sub_total_amount">بڕی بەشێك لە كۆی گشتی</string>
+    <string name="colon">:</string>
+    <string name="taxable_amount">بڕی باجكەوتوو</string>
+    <string name="reward_point_amount">بڕی پاداشت (بەخشش)</string>
+    <string name="payment_options">هەڵبژاردەكانی پارەدان</string>
+    <string name="choose_payment_method">شێوازی پارەدان هەڵبژێرە</string>
+    <string name="please_choose_any_payment_method">تكایە شێوازێكیی پارەدان هەڵبژێرە</string>
+    <string name="agent">دەڵاڵ:</string>
+    <string name="title_home_page">پایا</string>
+    <string name="login_register">چوونە ژوورەوە</string>
+
+    <string name="free">بەخۆڕایی</string>
+    <string name="request_property">داواکاری موڵک</string>
+    <string name="savings_calculator">بژمێر</string>
+    <string name="how_much_my_home_worth">خانووەكەت بایی چەندە؟</string>
+    <string name="contact_us">7501297777 964+</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="sort_by">پۆڵێنکردن بە پێی</string>
+    <string name="filter">فلتەر</string>
+    <string name="upgrade_your_plan">پلانەكەت بەرز بكەرەوە</string>
+    <string name="get_better">دیدێكی باشتری داهاتووت بەدەست بێنە</string>
+    <string name="address_colon">ناونیشان:</string>
+    <string name="gallery">گەلەری</string>
+    <string name="videos">گرتە ڤیدیۆییەكان</string>
+    <string name="remove_photo">لابردنی وێنە</string>
+    <string name="profile_photo">وێنەی پرۆفایل</string>
+    <string name="featured_listing">لیستكردنێكی تایبەتمەند</string>
+    <string name="property_description">پێناسەی موڵك</string>
+    <string name="floor_plan">نەخشەی موڵکەکە</string>
+    <string name="similar_projects">پڕۆژەی هاوشێوە</string>
+    <string name="select_profile_image">وێنەیەكی پرۆفایل دیاری بكە</string>
+    <string name="back">گەڕانەوە</string>
+    <string name="specification">زانیاری</string>
+    <string name="location_map">نەخشەی پێگەی شوێنی</string>
+    <string name="neighbourhood">گەڕەک</string>
+    <string name="posted_on_col"> بەرواری بۆست:</string>
+    <string name="negotiable"> (معامەلەی هەیە) </string>
+    <string name="id_col">کۆد:</string>
+    <string name="have_any_text">هیچ موڵكێك هەیە بۆ فرۆشتن/بەكرێدان ؟</string>
+    <string name="let_our_text">ڕێگە بە ڕاوێژكارەكانمان بدە با یارمەتیت بدەن لە فرۆشتن/بەكرێدانی موڵكەكەت</string>
+    <string name="price_on_request">نرخ لەسەر داخوازی</string>
+    <string name="special_offer">ئۆفەری تایبەت</string>
+    <string name="unit_details_floor_plans"> وردەکارییەکانی یەکە و نەخشەی نهۆمەکان</string>
+    <string name="your_name">ناوت</string>
+    <string name="your_email_address">ناونیشانی ئیمێڵەكەت</string>
+    <string name="after_expert_rating_heading">سوپاس بۆ تۆماركردنی هەڵسەنگاندنەكەت</string>
+    <string name="after_expert_rating_body">هەڵسەنگاندنەكە پۆست دەكرێت دوای پەسەندكردنی لە لایەن ئەدمینەوە</string>
+    <string name="established_in">دامەزراوە لە:</string>
+
+    <string name="my_questions">پرسیارەكانم</string>
+    <string name="viewing_request">داخوازیی پیشاندان</string>
+    <string name="open_house">Open House</string>
+    <string name="unified_tenancy_contract">بەڵێننامەی یەكگرتووی بەكرێدان</string>
+    <string name="download_pdf">PDF داببەزێنە</string>
+    <string name="date">بەروار: </string>
+    <string name="owner_name">ناوی خاوەنموڵك: </string>
+    <string name="lesser_name">ناوی كرێچی: </string>
+    <string name="end_date">بەرواری كۆتایی:</string>
+    <string name="add_slot">سۆراخ زیاد بكە</string>
+    <string name="start_date1">بەرواری دەستپێك:</string>
+    <string name="end_date1">بەرواری كۆتایی:</string>
+    <string name="select_property">دیاریكردنی موڵك</string>
+    <string name="start_date">بەرواری دەستپێك</string>
+
+    <string name="ask_your_question">پرسیارەكەت بكە</string>
+    <string name="emirates">پارێزگا</string>
+    <string name="city_text">شار</string>
+    <string name="yes">بەڵێ</string>
+    <string name="no">نەخێر</string>
+    <string name="is_the_property_mortgaged">ئایا موڵكەكە ڕەهنكراوە ؟</string>
+    <string name="select_bank">بانك دیاری بكە</string>
+    <string name="no_email_only">ئیمێڵ</string>
+    <string name="do_you_want_to_be_contacted_by_an_estate_agent">دەتەوێت لە لایەن دەڵاڵی خانووبەرەوە پەیوەندیت پێوە بكرێت؟</string>
+    <string name="how_would_you_like_to_be_contacted">حەز دەكەیت چۆن پەیوەندیت پێوە بكرێت؟</string>
+    <string name="rented_without_notice">بە بێ تێبینی بەكرێ درا</string>
+    <string name="vacant_in_60_days">چۆڵكردن لە ماوەی 60 ڕۆژدا</string>
+    <string name="no_response">وەڵام نییە</string>
+    <string name="press_back_again">دووبارە دەست بنێ بە گەڕانەوە بۆ دەرچوون.</string>
+    <string name="no_internet_connection">بەستنەوە بە ئینتەرنێتەوە بەردەست نییە</string>
+    <string name="failed">شكستی هێنا</string>
+    <string name="email_required">ئیمێڵ داواكراوە.</string>
+    <string name="enter_full_name">ناوی تەواو داخڵ بكە</string>
+    <string name="valid_phone_number">ژمارە تەلەفۆنێكی كارا داخڵ بكە</string>
+    <string name="please_enter_name">تكایە ناو داخل بكە</string>
+    <string name="please_enter_valid_name">تكایە ناوێكی باوەڕپێكراو داخڵ بكە</string>
+    <string name="please_enter_email_address">تكایە ناونیشانی ئیمێڵ داخڵ بكە</string>
+    <string name="please_enter_valid_email_address">تكایە ناونیشانی ئیمێڵێكی كارا داخڵ بكە</string>
+    <string name="please_enter_phone_number">تكایە ژمارە تەلەفۆن داخڵ بكە</string>
+    <string name="valid_mobile_number">تكایە ژمارە مۆبایلێكی كارا داخڵ بكە</string>
+    <string name="please_enter_enquiry">تكایە پرسوجۆ داخڵ بكە</string>
+    <string name="failed_to_shortlist">شكستی هێنا لە كورتكردنەوەی لیستدا</string>
+    <string name="property_deleted">موڵك بەسەركەوتوویی ڕەش كرایەوە</string>
+    <string name="please_write_your_question">تكایە پرسیارەكەت بنووسە</string>
+    <string name="no_slots_listed">هیچ سۆراخێك لیست نەكراوە</string>
+    <string name="slot_successfully_added">سۆراخ بە سەركەوتوویی زیاد كرا.</string>
+    <string name="slot_already_exist">سۆراخ پێشتر بوونی هەیە</string>
+    <string name="select_start_date">بەروارێكی دەستپێك دیاری بكە</string>
+    <string name="select_end_date">بەروارێكی كۆتایی دیاری بكە</string>
+    <string name="deleted">سڕایەوە</string>
+    <string name="no_enquiries">هیچ پرسوجۆیەك نەدۆزرایەوە</string>
+    <string name="status_changed">دۆخەكان گۆڕدرا</string>
+    <string name="no_saved_searches">هیچ گەڕانێكی خەزێنەكراو نییە</string>
+    <string name="no_pdf_file_found">هیچ فایلێكی PDF نەدۆزرایەوە</string>
+    <string name="select_category">دەستەیەك دیاری بكە</string>
+    <string name="please_enter_first_name">تكایە ناوی یەكەم داخڵ بكە</string>
+    <string name="please_enter_last_name">تكایە ناوی كۆتایی داخڵ بكە</string>
+    <string name="enter_billing_address">ناونیشانی پسووڵە داخڵ بكە</string>
+    <string name="please_select_country">تكایە وڵات دیاری بكە</string>
+    <string name="please_select_state">تكایە پارێزگا دیاری بكە</string>
+    <string name="please_select_district">تكایە مەڵبەند دیاری بكە</string>
+    <string name="payment_method_validation">تكایە شێوازێكی پارەدان هەڵبژێرە</string>
+    <string name="find_location_details">ناتوانرێت وردەكاریی پێگەی شوێنی بدۆزرێتەوە</string>
+    <string name="permission_denied">مۆڵەتنامە ڕەت كرایەوە</string>
+    <string name="select_location_details">وردەكارییەكانی پێگەی شوێنی دیاری بكە</string>
+    <string name="failed_update">شكستی هێنا لە بەڕۆژكردنی وردەكارییەكانی پرۆفایلدا</string>
+    <string name="please_enter_address">تكایە ناونیشان داخڵ بكە</string>
+    <string name="enter_valid_first_name">تكایە ناوی یەكەمێكی باوەڕپێكراو داخڵ بكە</string>
+    <string name="enter_valid_last_name">تكایە ناوی كۆتایەكی باوەڕپێكراو داخڵ بكە</string>
+    <string name="please_enter_offer_price">تكایە نرخی پێشنیازكراو داخڵ بكە</string>
+    <string name="comment_required">سەرنج داواكراوە</string>
+    <string name="accept_terms_conditions">تكایە یاسا و ڕێساكان قبووڵ بكە</string>
+    <string name="list_your_business">بازرگانییەكەت بكە بە لیست</string>
+    <string name="business_name_col">ناوی بازرگارنی:</string>
+    <string name="select_city_col">شار دیاری بكە:</string>
+    <string name="select_category_col">دەستە دیاری بكە:</string>
+    <string name="contact_name_col">ناوی پەیوەندی:</string>
+    <string name="email_address_col">ناونیشانی ئیمێڵ:</string>
+    <string name="enter_your_email_phone">تكایە ئیمێڵە تۆماركراوەكەت داخڵ بكە</string>
+    <string name="invalid_username_password">تێپەڕەوشە یان ناوی بەكارهێنەر ناكارایە</string>
+    <string name="enter_password">تێپەڕەوشە داخڵ بكە</string>
+    <string name="your_phone">ئیمێڵەكەت یان ژمارە مۆبایلەكەت داخڵ بكە</string>
+    <string name="please_enter_otp">تكایە تێپەڕەوشەی یەكجار بەكارهێنراو (OTP) داخڵ بكە</string>
+    <string name="enter_your_password">تكایە تێپەڕەوشەكەت داخڵ بكە</string>
+    <string name="password_without_space">تكایە تێپەڕەوشەكەت داخڵ بكە بە بێ بۆشایی</string>
+    <string name="confirm_your_password">تكایە تێپەڕەوشەكەت دووپات بكەرەوە</string>
+    <string name="password_mismatch">تێپەڕەوشە نادرووستە</string>
+    <string name="You_must_agree_terms">ڕازیبوون بە یاساکان دیاری بکە</string>
+    <string name="complete_action_using">بەكارهێنانی كرداری تەواو</string>
+    <string name="install_filemanages">تكایە "File Manager"ێك دابمەزرێنە بۆ تەواوكردنی فرمانەكە</string>
+    <string name="valid_property_image">تكایە وێنەیەكی باوەڕپێكراوی موڵك بار بكە</string>
+    <string name="enter_property_title"> پێناسەی موڵک بنوسە، (خانوو | بۆ فرۆشتن | ٢٠٠ م | بەختیاری)</string>
+    <string name="enter_property_price">تکایە نرخ دیاری بکە</string>
+    <string name="select_currency_type">تکایە جۆری دراو(پارە) دیاری بکە</string>
+    <string name="select_currency_terms">مەتر دووجا یان نرخی گشتی بە گوێرەی نرخەکە تکایە نرخ دیاری بکە بە گوێرەی</string>
+    <string name="enter_property_description">تكایە پێناسەیەكی موڵك داخڵ بكە</string>
+    <string name="enter_business_name">تكایە ناوی بازرگانی داخڵ بكە</string>
+    <string name="meter_square">م²</string>
+    <string name="offer_ends">ئۆفەرەكە كۆتایی پێ دێت لە: </string>
+    <string name="all_locations">هەموو شوێنەکان</string>
+    <string name="enter_city">شار داخڵ بكە</string>
+    <string name="enter_category">دەستە داخڵ بكە</string>
+    <string name="please_select_rating">تكایە پلەبەندییەكەت دیاری بكە</string>
+    <string name="please_write_comment">تكایە سەرنجێك بنووسە</string>
+    <string name="please_enter_review_title">تكایە تایتڵی هەڵسەنگاندن داخڵ بكە</string>
+    <string name="likes">حەزلێكراوەكان</string>
+    <string name="unlikes">حەزلێنەكراوەكان</string>
+    <string name="answers">وەڵامەكان</string>
+    <string name="rate_now">هەر ئێستا پلەبەندی بكە</string>
+    <string name="review_title">تایتڵی هەڵسەنگاندن</string>
+    <string name="write_your_review">هەڵسەنگاندنەكەت بنووسە</string>
+    <string name="your_rating">پلەبەندییەكەت</string>
+    <string name="by_text">لە لایەن</string>
+    <string name="about">لە بارەی</string>
+    <string name="property_name_star">پێناسەی موڵک (خانوو | بۆ فرۆشتن | ٢٠٠ م | بەختیاری)<font color='#ff3333'>*</font></string>
+    <string name="property_type_star"> جۆری موڵک <font color='#ff3333'>*</font></string>
+    <string name="property_posted_by">کارمەند دیاری بکە<font color='#ff3333'>*</font></string>
+    <string name="choose_plan_star">پلان هەڵبژێرە <font color='#ff3333'>*</font></string>
+    <string name="description_star">وردەکاری زیاتر</string>
+    <string name="price_star">نرخ <font color='#ff3333'>*</font></string>
+    <string name="number_of_cheques">ژمارەی چەكە بانكییەكان</string>
+    <string name="enter_youtube_video_url">بەستەری ڤیدیۆی یوتوب داخڵ بكە</string>
+    <string name="video_uploaded_successfully">گرتە ڤیدیۆییەكە بە سەركەوتوویی خەزێنە كرا</string>
+    <string name="video_updated_successfully">گرتە ڤیدیۆییەكە بە سەركەوتوویی بەڕۆژ كرا</string>
+    <string name="video_deleted_successfully">گرتە ڤیدیۆییەكە بە سەركەوتوویی ڕەش كرایەوە</string>
+    <string name="user_cancelled">بەكارهێنەر هەڵوەشێنرایەوە</string>
+    <string name="success">سەركەوتوو</string>
+    <string name="download_voucher">قەواڵە داببەزێنە</string>
+    <string name="new_password">ووشەی نهێنی نوێ</string>
+    <string name="change_password">گۆڕینی ووشەی نهێنی</string>
+    <string name="current_password">ووشەی نهێنی ئێستا</string>
+    <string name="onwards">onwards</string>
+    <string name="up_to">Up to</string>
+    <string name="services">خزمەتگوزارییەكان</string>
+    <string name="new_listing">نوێترین لیستكردن</string>
+    <string name="date_valid">درێژی سۆراخ ناتوانرێت لە 24 كاتژمێر تێبپەڕێت</string>
+    <string name="your_profile_updated">پرۆفایلەكەت بە سەركەوتوویی بەڕۆژ كرا</string>
+    <string name="failed_update_profile">شكستی هێنا لە بەڕۆژكردنی وردەكارییەكانی پرۆفایلەكەتدا</string>
+    <string name="delete_this_image">تۆ دڵنیایت كە دەتەوێت ئەم وێنەیە بسڕیتەوە؟</string>
+    <string name="exit_without_update">گۆڕانكارییەكانت خەزێنە نەكرا، دەتەوێت دەربچیت بە بێ بەڕۆژكردن؟</string>
+    <string name="select_any_location">تكایە پێگەیەكی شوێنی دیاری بكە</string>
+    <string name="select_any_property_type">تكایە جۆری موڵك دیاری بكە</string>
+    <string name="no_enquiry">ژمارەی پرسوجۆ:</string>
+    <string name="no_of_view">ژمارەی بینەران:</string>
+    <string name="plan_upgraded_successfully">پلانی موڵكەكەت بە سەركەوتوویی بەرز كرایەوە</string>
+    <string-array name="userTypeList">
+        <item>كڕیار</item>
+        <item>فرۆشیار</item>
+        <item>كرێچی</item>
+        <item>خاوەنموڵك</item>
+    </string-array>
+    <string name="enter_360_url">تكایە بەستەری دیمەنی 360 پلە داخڵ بكە</string>
+    <string name="mortgage_required">ئایا ڕەهن داواكراوە؟ </string>
+    <string name="plan_duration">ماوە (كات)</string>
+    <string name="plan_free_home">Free Home Worth Estimation</string>
+    <string name="plan_portal_list">International Portal Listing</string>
+    <string name="virtual_tour">Virtual Tour</string>
+    <string name="featured_list">لیستكردنێكی تایبەتمەند</string>
+    <string name="profession_list">پێناسەی پیشەیی</string>
+    <string name="community_manager">Personel Community Manager</string>
+    <string name="plan_photography">فۆتۆگرافیی پیشەیی</string>
+    <string name="valid_url">تكایە بەستەرێكی كارا بۆ جیمەنی 360 پلە داخل بكە</string>
+    <string name="same_plan_update_alert">ببورە، تۆ پێشتر لە هەمان پلاندا بەشداریت كردبوو بۆ موڵكەكە. پلانێكی تر هەڵبژێرە.</string>
+    <string name="highlights">دیاریكراوەكان</string>
+    <string name="voucher_download">دابەزاندنی قەواڵە</string>
+    <string name="listing_detail_property_id">Listing Detail property Id : </string>
+    <string name="registered_user_name">ناوی بەكارهێنەری تۆماركراو:</string>
+    <string name="mobile_number_thankyou">ژمارە مۆبایل:</string>
+
+    <string name="do_not_disclose">Do not disclose personal information including but not limited to financial and personal details on the internet. Always refer to our privacy policy and Terms and Conditions. For problems and reporting </string>
+
+    <string name="valid_youtube_url">بەستەری كارا داخڵ بكە</string>
+    <string name="select_state_null">كرتە بكە بۆ داخڵ كردنی پارێزگا</string>
+    <string name="hint_city_null">كرتە بكە بۆ داخڵ كردنی شار</string>
+    <string name="phone_and_email">تەلەفۆن &amp; ئیمێڵ</string>
+    <string name="select_a_category">دەستەیەك دیاری بكە</string>
+
+    <string name="i_agree_to_the">من ڕازیم بە </string>
+    <string name="terms_and_conditions">" یاسا و ڕێنماییەکانی "</string>
+    <string name="text_of">""</string>
+    <string name="please_choose_other_locality">تكایە هەڵكەوتەی شوێنییەكی تر هەڵبژێرە</string>
+    <string name="are_you_sure_to_unfollow_this_agency">ئایا تۆ دڵنیایت لە هەڵوەشاندنەوەی شوێنكەوتنی ئەم دەڵاڵە؟</string>
+    <string name="are_you_sure_want_to_delete_it">دڵنیایت دەتەوێ ئەم موڵکە بسڕیتەوە"</string>
+    <string name="are_you_sure_to_remove_this_requirment">ئایا تۆ دڵنیایت لە لابردنی ئەم داواكارییە؟</string>
+    <string name="are_you_sure_to_delete_this_search">ئایا تۆ دڵنیایت لە سڕینەوەی ئەم گەڕانە؟</string>
+    <string name="are_you_sure_want_to_delete">ئایا تۆ دڵنیایت دەتەوێت بیسڕیتەوە؟</string>
+    <string name="are_you_sure_to_remove_this_project">ئایا تۆ دڵنیایت لە لابردنی ئەم پرۆژەیە؟</string>
+    <string name="are_you_sure_to_remove_this_property">ئایا تۆ دڵنیایت لە لابردنی ئەم موڵكە؟</string>
+    <string name="are_you_sure_want_to_logout">ئایا تۆ دڵنیایت دەتەوێت بچیتە دەرەوە لە سیستم؟</string>
+    <string name="bath">گەرماو</string>
+    <string name="bed">نووستن</string>
+    <string name="blueprint"> نەخشەی موڵکەکە</string>
+    <string name="rented">بەکرێ دراوە</string>
+    <string name="will_be_ready_soon">بەم زووانە ئامادە دەبێت</string>
+    <string name="possession_date_col">بەرواری خاوەنداریەتی :</string>
+    <string name="about_the_property">ووردەکاری موڵکەکە</string>
+    <string name="alert">ئاگادار کەرەوە</string>
+    <string name="min_price_with_value">کەمترین : $%s</string>
+    <string name="max_price_with_value">زۆرترین : $%s</string>
+    <string name="paya_real_estate_application">ئەپڵیکەیشنی پایە بۆ خانووبەرە</string>
+    <string name="choose_language">زمان هەڵبژێرە​</string>
+    <string name="choose_location">شارەکەت هەڵبژێرە</string>
+    <string name="english">English</string>
+    <string name="arabic">عربى</string>
+    <string name="kurdish">کوردی</string>
+    <string name="text_update">ئێستا بەڕۆژ بكە</string>
+    <string name="text_app_update_title">ڤێرژنی نوێ بەردەستە</string>
+    <string name="text_force_update_message">ڤێرژنێکی نوێ تر بەردەستە بۆ دابەزاندن! تکایە ئەپدەیتی بکەوە بۆ بەردەوام بوون</string>
+    <string name="text_soft_update_message">وەشانێكی نوێ دۆزرایەوە لە "Play Store". تكایە بەڕۆژ بكە لە پێناو بەكارهێنانێكی باشتردا.</string>
+    <string name="text_skip">پەڕاندن</string>
+    <string name="text_paya_notification_title">زانیاریی پایا</string>
+    <string name="text_paya_notification_body">زانیاریی نوێت پێ گەیشتووە</string>
+    <string name="text_kurdish_language_inprogress_message">زمانی كوردی لە ژێر تێستدایە. بەم زووانە بەردەست دەبێت.</string>
+
+    <string name="text_add_picture">وێنە دابنێ</string>
+    <string name="text_add_blue_print">نەخشە دابنێ</string>
+    <string name="text_upload">دانان</string>
+    <string name="city_with_details">شار (بغدا، هەولێر، بەصرە، هتد…)</string>
+    <string name="enter_city_with_details">شار دابنێ (بغدا، هەولێر، بەصرە، هتد…)</string>
+    <string name="text_more_spec">ووردەکاری زیاتر دابنێ</string>
+    <string name="text_less_spec">ووردەکاری کەمتر..</string>
+    <string name="enter_attr_phone_no">تکایە ژمارەی مۆبایل بنوسە لەم بۆشاییە</string>
+    <string name="enter_attr_area">ڕووبەر تۆمار بکە</string>
+    <string name="enter_attr_bathroom">تکایە ژمارەی دەستشۆر دیاری بکە لەم بۆشاییە</string>
+    <string name="enter_attr_kitchen">تکایە ژمارەی چێشتخانە دیاری بکە لەم بۆشاییە</string>
+    <string name="enter_attr_living_room">ژمارەی ژووری دانیشتن دیاری بکە</string>
+    <string name="enter_attr_floor_number"> ژمارەی نهۆم دیاری بکە</string>
+    <string name="mothly_rent_with_star">کرێی مانگانە <font color='#ff3333'>*</font></string>
+    <string name="mothly_rent">کرێی مانگانە (دۆلار)</string>
+    <string name="please_try_after_some_times">تکایە دوای کەمێکی تر هەول بدە</string>
+    <string name="next">دواتر</string>
+    <string name="enter_attr_bed_room_spec">ژمارەی ژووری نووستن دیاری بکە</string>
+    <string name="please_select_atleast_amenities">تکایە بە لایەنی کەمەوە یەک تایبەتمەندی دیاری بکە</string>
+    <string name="menu">لیست</string>
+    <string name="coming_soon">بەم زووانە</string>
+    <string name="add_your_business">پیشەکەت دابنێ</string>
+    <string name="for_buy">پۆستکرا لە</string>
+    <string name="for_rent">بۆ کڕین</string>
+    <string name="create_new_account">خۆ تۆمارکردن </string>
+    <string name="text_agent_properties_count">%d موڵک</string>
+    <string name="text_count_agent_founds">%d Agents Found (%s)</string>
+    <string name="text_search_agent">…گەڕان بە دوای وەکیل</string>
+    <string name="search_by_city_buy_rent_hint">گەڕان (شار ، کڕین ، کرێ…)</string>
+    <string name="sort_by_asc">sortby asc</string>
+    <string name="sort_by_desc">sortby desc</string>
+    <string name="property_count">Property Count</string>
+    <string name="sort_by_high_low">sortby high to low</string>
+    <string name="sort_by_low_high">sortby low to high</string>
+    <string name="social_media">SocialMedia</string>
+    <string name="sub_agents">لقەکان</string>
+    <string name="agent_properties">موڵکەکان</string>
+    <string name="load_more">زیاتر</string>
+    <string name="agent_property_price">$ %s</string>
+
+    <string name="city_864">ئەنبار</string>
+    <string name="city_2558">ديوانيه</string>
+    <string name="city_1358">قادسييه‌</string>
+    <string name="city_1188">بابل</string>
+    <string name="city_41">بەغدا</string>
+    <string name="city_861">بەصرا</string>
+    <string name="city_2283">ذي قار</string>
+    <string name="city_1555">ديالى</string>
+    <string name="city_57">دهۆک</string>
+    <string name="city_44">هەولێر</string>
+    <string name="city_1459">هەڵەبجە</string>
+    <string name="city_829">کەربەلا</string>
+    <string name="city_869">کەرکوک</string>
+    <string name="city_1284">ميسان</string>
+    <string name="city_881">نەجەف</string>
+    <string name="city_1268">صلاح الدين</string>
+    <string name="city_56">سلێمانی</string>
+    <string name="city_58">نەینەوا</string>
+    <string name="city_1604">واسط</string>
+
+    <string name="optional">ئارەزومەندانە</string>
+    <string name="city_address">شار/ناونیشان</string>
+    <string name="thanks_will_publish_soon">دەست خۆش، موڵکەکەت بە دەستمان گەیشت، بەم زووانە پۆست دەکرێ</string>
+    <string name="your_property_published_successfully">موڵكه‌كه‌ت به‌ سه‌ركه‌وتووى پۆست كرا</string>
+
+    <string name="property_of_agent"> موڵکەکان:</string>
+    <string name="contact_paya">پەیوەندی بە تیمی پایە بکە</string>
+
+    <string name="individual">بەشداربوو</string>
+    <string name="agency">عەقارات</string>
+
+
+    <string name="bedrooms_star">ژووری نووستن<font color='#ff3333'>*</font></string>
+
+
+
+
+    <string name="company_name"> ناوی کۆمپانیا</string>
+    <string name="agency_full_name">ناوى كه‌سايه‌تى</string>
+    <string name="main_phone_number"> ژمارە مۆبایلی سەرەکی (مەرج)</string>
+    <string name="secondary_phone_number">  ژمارە مۆبایلی دووەم (هەڵبژاردە) </string>
+    <string name="agency_location">شوێن</string>
+    <string name="agency_logo">لۆگۆى نووسينگه</string>
+
+    <string name="usd">دۆلار</string>
+    <string name="iqd">دیناری عێراقی</string>
+
+
+    <string name="priceinM">نرخ بۆ هەر مەترێک (م²)</string>
+    <string name="total_price">نرخی گشتی</string>
+
+    <string name="phone_number_1">ژمارە مۆبایل ١</string>
+    <string name="phone_number_2">ژمارە مۆبایل ٢ </string>
+
+    <string name="adp_specification">وردەکاریی</string>
+    <string name="password_changed_successfully"> گۆڕا سەرکەوتوویی بە نهێنیەکە ووشە</string>
+
+
+    <string name="please_enter_company_name">تکایە ناوی کۆمپانیا تۆمار بکە</string>
+    <string name="validate_company_name">تکایە ناوی کۆمپانیای بەردەست تۆماربکە</string>
+    <string name="please_enter_fullname">تکایە ناو تۆماربکە</string>
+    <string name="validate_name">ناوی بەردەست تۆماربکە تکایە </string>
+    <string name="validate_secondary_no">تکایە دووەم ژمارە تەلەفۆنی بەردەست تۆمار بکە</string>
+
+    <string name="company_logo">لۆگۆی کۆمپانیا</string>
+
+    <string name="upload">دادەبەزێ</string>
+
+    <string name="per">بۆ هەر مەتر چوارگۆشەیەک</string>
+
+    <string name="welcome">بەخێربێن</string>
+
+    <string name="otp_success">کۆدەکە نێردرا بۆ ژمارە مۆبایلەکەت</string>
+
+    <string name="invalid_otp">کۆدەکە هەڵەیە</string>
+    <string name="otp_verified_successfully">کۆدەکە بە سەرکەوتوویی تۆمار کرا</string>
+    <string name="req_otp">کۆدەکە نێردرا </string>
+    <string name="enter_the_new_number">ژمارە نوێێەکە تۆمار بکە</string>
+    <string name="phone_no_verity">ژمارە مۆبایلەکەت سەلماندنی بۆ نەکراوە. تکایە بیسەلمێنە! </string>
+    <string name="phone_no_update">پێویستە ژمارە مۆبایلەکەت بسەلمێنیت بۆ ئەپدەیت کردنەوە!</string>
+
+
+    <string name="number_not_found">ژمارەکە بەردەست نییە پەیوەندی بە تیمی پایە بکە</string>
+    <string name="email_not_found">ئیمەیڵەکە نەدۆزرایەوە تکایە پەیوەندی بە تیمی پایە بکە</string>
+    <string name="call_paya_team">پەیوەندی بە تیمی پایە بکە</string>
+    <string name="all_nbh">هەموو</string>
+    <string name="text_no_results_found"> لە ئێستادا ئەنجامی هاوشێوە بەردەست نییە</string>
+    <string name="text_get_help_from_paya_team">داوای هاوکاری بکە لە تیمی پایە</string>
+    <string name="call_us">پەیوەندیمان پێوە بکە</string>
+    <string name="text_whatsapp">واتس ئەپ</string>
+    <string name="delete_account">سڕینەوەی هەژمار</string>
+    <string name="delete_account_title">سڕینەوەی هەژمارەکەت؟ کە بۆ هەمیشە هەژمارەکە دەسڕێتەوە</string>
+    <string name="text_pls_select_city">Please select the city</string>
+
+</resources>

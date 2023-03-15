@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC513</color>
+    <color name="colorPrimaryDark">@color/colorPrimary</color>
+
+    <color name="colorAccent">#fdb813</color>
+    <color name="yellow">#fdb813</color>
+    <color name="mainTextColorGray">#282829</color>
+    <color name="text_color">#ff000000</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#848484</color>
+    <color name="textOrange">#EE4D24</color>
+    <color name="textOrangeOverLay">#dbee4d24</color>
+    <color name="textOrangeBg">#ff6c00</color>
+
+    <color name="defaultContentColor">@android:color/black</color>
+    <color name="defaultBorderFlagColor">@android:color/transparent</color>
+    <color name="colorSearch">#666e79</color>
+    <color name="colorHintGray">#cac9c9</color>
+    <color name="menu_email">#efc432</color>
+    <color name="text_color_search">#282828</color>
+    <color name="background">#f1f3f1</color>
+    <color name="sub_text">#818286</color>
+    <color name="selector_color">#eeeeee</color>
+    <color name="liteGray">#c6c5c5</color>
+    <color name="tab_not_selected">#b2d9c6</color>
+
+    <color name="colorYellow">#ffc400</color>
+    <color name="colorGray">#ffffff</color>
+    <color name="filterBg">#e7e7e7</color>
+    <color name="text_light_color">#4d4f52</color>
+    <color name="color_hint">#aaaaaa</color>
+    <color name="color_dark_red">#DF5128</color>
+
+    <color name="red">#a94442</color>
+    <!--RagneBar-->
+</resources>

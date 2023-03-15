@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="3dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_view_property_listing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.paya.paragon.utilities.VerticalTextView
+                android:id="@+id/featured_text_item_property_listing"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#1e88e5"
+                android:gravity="center"
+                android:rotation="180"
+                android:text="@string/featured"
+                android:visibility="gone"
+                android:textColor="@android:color/white"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/image_item_property_listing"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/property_image" />
+
+
+                <TextView
+                    android:id="@+id/image_number_item_property_listing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/image_item_property_listing"
+                    android:layout_alignBottom="@+id/image_item_property_listing"
+                    android:background="@android:color/black"
+                    android:drawableStart="@drawable/icon_camera"
+                    android:drawablePadding="2dp"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:visibility="visible"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1.8"
+                android:orientation="vertical">
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:gravity="top"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:id="@+id/price_item_property_listing"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="AED 2,00,000"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+
+                </LinearLayout>-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:gravity="top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/price_item_property_listing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/share_item_property_listing"
+                        android:text="60000"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/share_item_property_listing"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_alignParentEnd="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/share"
+                        app:tint="@color/black" />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/property_name_item_property_listing"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="3dp"
+                    android:maxLines="2"
+
+                    android:text="RedWood Park | Phase 2 | 75 % on handover"
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/property_details_item_property_listing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:maxLines="2"
+
+                    android:text="3 Bed, Villa, 1975 Aq. Ft."
+                    android:textSize="13sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/property_location_item_property_listing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textSize="13sp"
+                    tools:ignore="HardcodedText"
+                    android:visibility="gone"/>
+
+                <include
+                    layout="@layout/icon_layout_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/icon_email"
+                    android:padding="5dp"
+                    android:text="@string/add_to_email" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/icon_filter"
+                    android:padding="5dp"
+                    android:text="@string/share" />
+            </LinearLayout>
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:src="@drawable/phone_symbol_circle" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.55dp"
+        android:background="#d7d7d7" />
+
+</androidx.cardview.widget.CardView>

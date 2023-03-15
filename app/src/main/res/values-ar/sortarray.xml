@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sortList">
+        <item>ذو أهمية</item>
+        <item>السعر من الاعلى الى الاقل</item>
+        <item>السعر من الادنى الى الاعلى</item>
+        <item>القائمة الاحدث</item>
+        <item>القائمة الاقدم</item>
+        <item>المساحة من الأكبر</item>
+        <item>المساحة من الأصغر</item>
+    </string-array>
+    <string-array name="sortValue">
+        <item>featured/orderby/desc</item>
+        <item>price/orderby/desc</item>
+        <item>price/orderby/asc</item>
+        <item>date/orderby/desc</item>
+        <item>date/orderby/asc</item>
+        <item>sqrft/orderby/desc</item>
+        <item>sqrft/orderby/asc</item>
+    </string-array>
+</resources>

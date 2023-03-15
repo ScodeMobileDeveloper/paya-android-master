@@ -1,0 +1,244 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+// Apply the Crashlytics Gradle plugin
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'org.jetbrains.kotlin.android'
+
+android {
+    compileSdkVersion 32
+
+    defaultConfig {
+        useLibrary 'org.apache.http.legacy'
+        applicationId "com.paya.paragon"
+        minSdkVersion 21
+        versionCode 59
+        versionName "1.0.59"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        targetSdkVersion 32
+        buildConfigField('String', 'GOOGLE_API_KEY', GOOGLE_API_KEY)
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+    }
+
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+
+
+    bundle {
+        language {
+            // Specifies that the app bundle should not support
+            // configuration APKs for language resources. These
+            // resources are instead packaged with each base and
+            // dynamic feature APK.
+            enableSplit = false
+        }
+        density {
+            // This property is set to true by default.
+            enableSplit = false
+        }
+        abi {
+            // This property is set to true by default.
+            enableSplit = false
+        }
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'Paya'
+            keyPassword 'welcome'
+            storeFile file("/Studies/Freelancer/Paya/app/src/release/paya_realestate.jks")
+            storePassword 'welcome'
+        }
+        debug {
+
+        }
+
+    }
+
+
+    flavorDimensions "tier"
+
+    productFlavors {
+        dev {
+            dimension "tier"
+            applicationId "com.paya.paragon"
+            buildConfigField "String", "BUILD_VARIANT", "\"dev\""
+            manifestPlaceholders.appLabel = "Paya-Dev"
+            buildConfigField "String", "APP_BASE_URL", '"https://www.paya-realestate.com/mobilapp/"'
+            buildConfigField "String", "LOGIN_USER_NAME", '"userLoginEmail"'
+
+        }
+        prod {
+            dimension "tier"
+            applicationId "com.paya.paragon"
+            buildConfigField "String", "BUILD_VARIANT", "\"prod\""
+            manifestPlaceholders.appLabel = "Paya"
+            buildConfigField "String", "APP_BASE_URL", '"https://www.paya-realestate.com/mobilapp/"'
+            buildConfigField "String", "LOGIN_USER_NAME", '"userLoginEmail"'
+
+        }
+    }
+
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            debuggable false
+            minifyEnabled false
+            buildConfigField "Boolean", "DEBUG_MODE", "false"
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+
+        }
+        debug {
+            debuggable true
+            buildConfigField "Boolean", "DEBUG_MODE", "true"
+
+        }
+    }
+
+    /*The is the code for the template of release name*/
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def project = "Paya"
+            def SEP = "_"
+            def flavor = variant.productFlavors[0].name
+            def buildType = variant.buildType.name
+            def versionName = variant.versionName
+            def versionCode = variant.versionCode
+
+            def newApkName = project + SEP + versionName + "v" + versionCode + SEP + flavor + SEP + buildType + ".apk"
+            outputFileName = new File(newApkName)
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/notice'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation 'com.google.android.material:material:1.2.1'
+
+    implementation "androidx.appcompat:appcompat:1.2.0"
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.2.0'
+    implementation "androidx.core:core-ktx:1.3.0"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.percentlayout:percentlayout:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
+
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    //noinspection DuplicatePlatformClasses
+    /*implementation 'org.apache.httpcomponents:httpcore:4.4.13'
+    implementation('org.apache.httpcomponents:httpmime:4.5.6') {
+        exclude module: "httpclient"
+    }*/
+    implementation('org.apache.httpcomponents:httpmime:4.3') {
+        exclude module: "httpclient"
+    }
+    implementation 'org.apache.httpcomponents:httpcore:4.4.3'
+    implementation 'org.apache.httpcomponents:httpmime:4.3'
+
+    /*implementation('org.apache.httpcomponents:httpmime:4.5.6') {
+        exclude module: "httpclient"
+    }*/
+
+    implementation 'com.google.code.gson:gson:2.9.1'
+
+    implementation 'com.squareup:otto:1.3.8'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+
+    implementation 'com.airbnb.android:lottie:4.2.2'
+    implementation 'com.futuremind.recyclerfastscroll:fastscroll:0.2.5'
+    implementation 'com.github.bumptech.glide:glide:4.14.1'
+    implementation 'com.github.davidpizarro:autolabelui:1.0.1'
+    implementation 'com.github.japgolly.android:svg-android:2.0.6'
+    implementation 'com.github.joielechong:countrycodepicker:2.4.2'
+    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.5.2'
+    implementation 'com.leavjenn.smoothdaterangepicker:library:0.2.0'
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    implementation 'com.lyft:scissors:1.1.1'
+    implementation 'io.github.chaosleung:pinview:1.4.4'
+
+    testImplementation 'junit:junit:4.13.2'
+
+
+    //lootie animation
+    implementation 'com.facebook.android:facebook-login:9.1.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.12'
+
+    //Custom Zoom and Dismissible Image View
+    //For migrating to androidx change version from 1.13.0 to 2.0.0 for fresco
+    api "com.facebook.soloader:soloader:0.9.0"
+    implementation 'com.facebook.fresco:fresco:2.1.0'
+    //For migrating to androidx change version from 1.1.3 to 2.0.0 for photodraweeview
+    implementation 'me.relex:photodraweeview:1.1.3'
+
+    //FireBase
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'com.google.firebase:firebase-crashlytics:17.2.1'
+    implementation 'com.google.firebase:firebase-core:17.5.0'
+    implementation 'com.google.firebase:firebase-config:19.2.0'
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+
+    // Google
+    implementation 'com.google.maps.android:android-maps-utils:2.2.5'
+    implementation 'com.google.android.libraries.places:places:2.5.0'
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+    implementation 'com.google.android.gms:play-services-location:19.0.1'
+    implementation 'com.google.android.gms:play-services-auth:20.1.0'
+    implementation 'com.google.android.gms:play-services-plus:17.0.0'
+
+    implementation 'com.jakewharton.timber:timber:5.0.1'
+
+    implementation "io.insert-koin:koin-android:3.3.0"
+
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
+
+}
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == "com.android.support") {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion "28.+"
+            }
+        }
+    }
+}

@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:autolabel="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:activity="com.paya.paragon.activity.search.SearchOptionActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="?android:attr/colorPrimary"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="1"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:textColor="@color/black" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar_layout"
+        android:overScrollMode="never"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/logo"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_splash_logo_yellow" />
+
+       <!--City-->
+
+            <LinearLayout
+                android:id="@+id/firstLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/city"
+                    android:textColor="@color/text_color_search"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <androidx.cardview.widget.CardView style="@style/CardViewStyleLogin">
+
+                        <TextView
+                            android:id="@+id/text_city_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/arrow_down"
+                            android:drawablePadding="20dp"
+                            android:gravity="center_vertical"
+                            android:minHeight="43dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:text="@string/select"
+                            android:textColor="@color/text_light_color"
+                            android:textSize="15sp" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/searchLay"
+                style="@style/CardViewStyleLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <com.dpizarro.autolabel.library.AutoLabelUI
+                        android:id="@+id/auto_label_location_buy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        autolabel:icon_cross="@drawable/close_icon_circle"
+                        autolabel:label_background_res="@drawable/auto_label_background"
+                        autolabel:label_clickable="true"
+                        autolabel:label_padding="4dp"
+                        autolabel:show_cross="true"
+                        autolabel:text_color="@android:color/black"
+                        autolabel:text_size="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/searchEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:background="@android:color/transparent"
+                            android:drawableStart="@drawable/add_icon"
+                            android:drawablePadding="5dp"
+                            android:hint="@string/search_hint_text"
+                            android:imeOptions="actionSearch"
+                            android:inputType="text"
+                            android:minHeight="40dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color_search"
+                            android:textColorHint="@color/color_hint"
+                            android:textSize="15sp" />
+
+                        <ProgressBar
+                            android:id="@+id/search_progress"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:padding="3dp"
+                            android:visibility="gone" />
+
+                        <AutoCompleteTextView
+                            android:id="@+id/edit_locations_buy"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/add_more"
+                            android:minHeight="40dp"
+                            android:nextFocusLeft="@id/edit_locations_buy"
+                            android:nextFocusUp="@id/edit_locations_buy"
+                            android:padding="5dp"
+                            android:textSize="16sp"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/searchResultLay"
+                style="@style/CardViewStyleLogin"
+                android:layout_height="200dp"
+                android:layout_below="@+id/searchLay"
+                android:layout_marginTop="-10dp"
+                android:visibility="gone">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    android:overScrollMode="never"
+                    android:scrollbars="vertical">
+
+                    <com.paya.paragon.utilities.CustomExpandable
+                        android:id="@+id/searchResult"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:groupIndicator="@null"
+                        android:visibility="visible"
+                        tools:listitem="@layout/show_property_type_selector_list_content_2">
+
+                    </com.paya.paragon.utilities.CustomExpandable>
+                </androidx.core.widget.NestedScrollView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:id="@+id/propertyTypeHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <HorizontalScrollView
+                    android:id="@+id/hour_scroll_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:scrollbars="none"
+                    tools:ignore="UselessParent">
+
+                    <RadioGroup
+                        android:id="@+id/hour_radio_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    </RadioGroup>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/property_type"
+                android:textColor="@color/text_color_search"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <androidx.cardview.widget.CardView style="@style/CardViewStyleLogin">
+
+                    <TextView
+                        android:id="@+id/tv_property_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/arrow_down"
+                        android:drawablePadding="20dp"
+                        android:gravity="center_vertical"
+                        android:minHeight="43dp"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:text="@string/select"
+                        android:textColor="@color/text_light_color"
+                        android:textSize="15sp" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/property_type_recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/propertyTypeHolder"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/nod_property_type">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/property_type"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/clear_focus"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/text_property_type_search_buy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edit_text"
+                android:drawableEnd="@drawable/arrow_down"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:minHeight="40dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/select_property_type"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/bedroom_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/property_type_recycler"
+                android:layout_marginTop="20dp"
+                android:text="@string/bedrooms"
+                android:textColor="@color/text_color_search"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bedroom_recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bedroom_text"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/nod_bedroom">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/bedrooms"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_bedroom_number_search_buy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edit_text"
+                android:drawableEnd="@drawable/arrow_down"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:minHeight="40dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/select"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/budgetText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bedroom_recycler"
+                android:layout_marginTop="20dp"
+                android:text="@string/budget"
+                android:textColor="@color/text_color_search"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.paya.paragon.utilities.custompricerange.RangeSeekBar
+                android:id="@+id/price_range_bar"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <TableRow
+                android:id="@+id/tr_min_max_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_min_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    tools:text="@string/min_price_with_value" />
+
+                <TextView
+                    android:id="@+id/tv_max_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    tools:text="@string/max_price_with_value" />
+
+            </TableRow>
+
+
+            <TextView
+                android:id="@+id/buy_property_search_button"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/menu_email"
+                android:gravity="center"
+                android:text="@string/search"
+                android:textColor="@color/text_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

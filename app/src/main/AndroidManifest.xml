@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.paya.paragon">
+
+    <queries>
+        <package android:name="com.whatsapp" />
+    </queries>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".PayaAppClass"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/ic_logo_with_text"
+        android:label="${appLabel}"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/ic_logo_with_text"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity
+            android:name=".activity.ImagesPreviewActivity"
+            android:exported="false"
+            android:configChanges="locale|orientation"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"  />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_places_api_key" />
+
+        <activity
+            android:name=".activity.details.ActivityAgentDetails"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name=".utilities.GeocodeAddressIntentService"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.intro.ActivitySplashScreen"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:noHistory="true"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.paya-realestate.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ActivityHome"
+            android:configChanges="locale|orientation"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PropertyProjectListActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.details.NewAgentDetailsPageActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.postProperty.PostPropertyPage01Activity"
+            android:configChanges="locale|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.postProperty.PostPropertyPage02Activity"
+            android:configChanges="locale|orientation"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.postProperty.PostPropertyPage03Activity"
+            android:configChanges="locale|orientation"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.postProperty.PostPropertyPage04Activity"
+            android:configChanges="locale|orientation"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.postProperty.PostPropertyPage05Activity"
+            android:configChanges="locale|orientation"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.postProperty.PostPropertyLocationSelection"
+            android:configChanges="locale|orientation"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.LanguageActivity"
+            android:configChanges="locale|orientation"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.CitySelectionActivity"
+            android:configChanges="locale|orientation"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.GalleryListActivity"
+            android:configChanges="locale|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.search.SearchOptionActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.search.ActivityFilter"
+            android:launchMode="singleTask"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.details.ActivityPropertyDetails"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.details.ActivityProjectDetails"
+            android:launchMode="singleTask"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.login.ActivityLoginEmail"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.login.ActivityForgotPassword"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <!--
+ <activity
+            android:name="com.paya.paragon.activity.GalleryActivity"
+            android:theme="@style/Theme.AppCompat.Translucent"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        -->
+        <activity
+            android:name=".activity.dashboard.ActivitySavedSearchList"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.dashboard.ActivityMyProperties"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.dashboard.ActivityMyPlan"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.dashboard.ActivityShortlisted"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.dashboard.ActivityPostedRequirements"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.dashboard.ActivitySettings"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.dashboard.ActivityMyPlanUpgrade"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.login.ActivitySignUp"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.postRequirements.ActivityRequirementPurpose"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.CalculatorWebView"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.AgentDetailsActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/AgentDetailPageTheme" />
+        <activity
+            android:name=".activity.postRequirements.ActivityRequirementPropertyType"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.postRequirements.ActivityRequirementLocation"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.postRequirements.ActivityRequirementFeatures"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.postRequirements.ActivityRequirementContact"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.postRequirements.ActivityRequirementOTP"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.postRequirements.ActivityRequirementConfirm"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.postRequirements.ActivityRequirementSubmitted"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.dashboard.ActivityUpgradePayment"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.dashboard.ActivityMyAgents"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.dashboard.ActivityPropertyEnquiries"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.buy.LocationsActivity"
+            android:label="@string/title_activity_locations"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.dashboard.ActivityYouTubeVideo"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.dashboard.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.dashboard.ProfileImageBrowseActivity"
+            android:label="@string/title_activity_profile_image_browse"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.dashboard.ProfileImageCropActivity"
+            android:label="@string/title_activity_profile_image_crop"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.postProperty.ActivityPostPropertyPreview"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.login.ActivityOTP"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.dashboard.ActivityMySubscriptions"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.PaymentActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.localExpert.ActivityLocalExpertDashboard"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.localExpert.ActivityLocalExpertListing"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.localExpert.ActivityLocalExpertDetails"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.dashboard.ActivityEnquiriesOffers"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.dashboard.ActivityViewingRequests"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.dashboard.ActivityUnifiedTenancyContract"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.dashboard.ActivityOpenHouse"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.dashboard.ActivityMyQuestions"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.dashboard.ChangePasswordActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <service
+            android:name=".push.PayaFirebaseMessagingService"
+            android:exported="false"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

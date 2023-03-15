@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:autolabel="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+tools:context="com.paya.paragon.activity.dashboard.ActivityUpgradePayment">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize"
+                android:background="?android:colorPrimary"
+                app:contentInsetStartWithNavigation="0dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="5dp"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp"
+                    android:textColor="@color/black" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/content_activity"
+        layout="@layout/content_activity_upgrade_payment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_upgrade_plan_my_plan"
+        android:layout_below="@+id/app_bar_layout"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp" />
+
+    <TextView
+        android:id="@+id/button_upgrade_plan_my_plan"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@color/menu_email"
+        android:gravity="center"
+        android:text="@string/upgrade"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

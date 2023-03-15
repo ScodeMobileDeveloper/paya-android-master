@@ -1,0 +1,60 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.paya.paragon.activity.buy.PropertyListFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout_contents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:visibility="gone">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/progressBar"
+                android:layout_alignParentTop="true"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingTop="1dp"
+                android:paddingBottom="50dp"
+                android:scrollbars="none" />
+
+            <!--<androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_no_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="@string/no_records_alert_listing"
+                android:textColor="@color/mainTextColorGray"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:drawableTopCompat="@drawable/icon_no_record" />
+-->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:padding="15dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/layout_no_data"
+            layout="@layout/layout_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</layout>

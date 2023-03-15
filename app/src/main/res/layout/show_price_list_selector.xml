@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+    <androidx.cardview.widget.CardView style="@style/CardViewStyleLogin">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/sv_list_search"
+        android:layout_width="match_parent"
+        android:maxWidth="200dp"
+        android:focusable="true"
+        app:queryHint="@string/search"
+        app:iconifiedByDefault="false"
+        android:layout_height="40dp"
+        android:visibility="visible"
+        />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_price_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:smoothScrollbar="true" />
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/group"
+        android:checkableBehavior="single">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/title_home"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/ic_locate"
+        android:title="Search"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_favorite"
+        android:icon="@drawable/ic_like_for_bottom"
+        android:title="Notification"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_notification"
+        android:icon="@drawable/ic_notification"
+        android:title="Favorite"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_options"
+        android:icon="@drawable/ic_more"
+        android:title="Option"
+        app:showAsAction="ifRoom"/>
+
+    </group>
+
+</menu>

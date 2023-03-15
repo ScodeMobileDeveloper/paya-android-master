@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_popup"
+    android:gravity="center"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:textDirection="rtl"
+    tools:ignore="LabelFor">
+
+    <ScrollView
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alert_background_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/contact_owner"
+                    android:textColor="@color/text_color_search"
+                    android:textSize="22sp"
+                    tools:ignore="RelativeOverlap" />
+
+                <ImageView
+                    android:id="@+id/close_contact_owner"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:padding="7dp"
+                    app:srcCompat="@drawable/icon_close_black"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <EditText
+                    android:id="@+id/editText_user_full_name_contact_owner"
+                    style="@style/editTextAlert"
+                    android:hint="@string/full_name"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/editText_user_email_address_contact_owner"
+                    style="@style/editTextAlert"
+                    android:hint="@string/email_address"
+                    android:inputType="textEmailAddress" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layoutDirection="ltr"
+                    android:background="@drawable/bg_edit_text_popup"
+                    android:orientation="horizontal">
+
+                    <com.paya.paragon.utilities.CountryCode.CountryCodePicker
+                        android:id="@+id/country_code_contact_owner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        app:ccp_textGravity="RIGHT" />
+
+                    <EditText
+                        android:id="@+id/editText_phone_contact_owner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+
+                        android:background="@android:color/transparent"
+                        android:gravity="end"
+                        android:hint="@string/phone"
+                        android:inputType="number|phone"
+                        android:labelFor="@+id/editText_phone_edit_agent_profile"
+                        android:maxLength="11"
+                        android:maxLines="1"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/editText_user_message_contact_owner"
+                    style="@style/editTextAlert"
+                    android:hint="@string/enquiry"
+                    android:inputType="textImeMultiLine" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_info_mortgage_contact_owner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffffffff"
+                    android:button="@drawable/selector_checkbox_newsletter"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/mortgage_info_property_contact_owner"
+                    android:textColor="#484848" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_terms_conditions_contact_owner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffffffff"
+                    android:button="@drawable/selector_checkbox_newsletter"
+                    android:checked="true"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/terms_and_conditions_and_privacy_policy"
+                    android:textColor="#484848" />
+
+                <TextView
+                    android:id="@+id/button_submit_contact_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/bg_button_yellow"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:paddingStart="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="25dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/submit"
+                    android:textColor="@color/text_color_search"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/findhome_terms_and_conditions"
+                    android:textColor="@color/sub_text"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="30dp"
+                android:background="#00000000" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/layout"
+        android:layout_alignTop="@+id/layout"
+        android:layout_alignEnd="@+id/layout"
+        android:layout_alignBottom="@+id/layout"
+        android:alpha="0.7"
+        android:background="@color/colorSearch"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminateBehavior="repeat"
+        android:visibility="gone" />
+</RelativeLayout>

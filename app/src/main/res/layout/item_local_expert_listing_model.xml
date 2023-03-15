@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_view_local_expert_listing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="15dp"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/image_item_property_listing"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_image" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_weight="2.8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:id="@+id/name_item_local_expert_listing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="7dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_toLeftOf="@id/tv_offer_available"
+                    android:text="Royal Empire Real Estate"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/tv_offer_available"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/background_button_yellow"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Offer Available"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    tools:ignore="HardcodedText" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/category_item_local_expert_listing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bathroom and Sanitary wares, Contractor"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/city_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/expert_loc"
+                android:drawablePadding="5dp"
+                android:textColor="@color/text_light_color"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:id="@+id/address_item_local_expert_listing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="1501 API Trio tower, Behind Novotel, Al Barsha, UAE, Dubai"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/phone_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/expert_phone"
+                android:drawablePadding="5dp"
+                android:textColor="@color/text_light_color"
+                android:textSize="14sp"
+                android:visibility="gone"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.55dp"
+        android:background="#d7d7d7" />
+
+</LinearLayout>

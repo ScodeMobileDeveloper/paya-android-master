@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "398464772882",
+    "firebase_url": "https://paya-realestate-cef5f.firebaseio.com",
+    "project_id": "paya-realestate-cef5f",
+    "storage_bucket": "paya-realestate-cef5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398464772882:android:ecf51ffaae4f90fcefe1cb",
+        "android_client_info": {
+          "package_name": "com.paya.paragon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398464772882-5vp1gb1vkp1o458fh46r1a9l6maot7tv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.paya.paragon",
+            "certificate_hash": "b82eb288a49d18dfdff7d0b9b1e7cbe171f58d52"
+          }
+        },
+        {
+          "client_id": "398464772882-knjatsuc21ja14blovs7g2ad3hd0m2q1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.paya.paragon",
+            "certificate_hash": "ef7ca915c8e421aec8331bc2aed28df07e972dff"
+          }
+        },
+        {
+          "client_id": "398464772882-o84pd05o3r0ln2es3aobtg5a4gtbh46e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ6pQEXS2UC3kWCTFVBl4tdwkDSOQgJSw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398464772882-o84pd05o3r0ln2es3aobtg5a4gtbh46e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "398464772882-rnqe6dmsgbshrgebkh47cmmfhmb4cng8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.paya-realestate.ispg",
+                "app_store_id": "1502059171"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

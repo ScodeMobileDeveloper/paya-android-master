@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>soft_update_version_no</key>
+        <value>1.0.0</value>
+    </entry>
+    <entry>
+        <key>force_update_version_no</key>
+        <value>1.0.10</value>
+    </entry>
+</defaultsMap>

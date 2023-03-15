@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:orientation="vertical"
+    tools:ignore="LabelFor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alert_background_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="15dp"
+                android:gravity="top"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center|bottom"
+                    android:text="@string/make_an_offer"
+                    android:textColor="@color/text_color_search"
+                    android:textSize="22sp"
+                    tools:ignore="RelativeOverlap" />
+
+                <ImageView
+                    android:id="@+id/close_make_an_offer"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="top"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="top"
+                    android:padding="7dp"
+                    app:srcCompat="@drawable/icon_close_black"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp">
+
+
+                <EditText
+                    android:id="@+id/editText_user_full_name_make_an_offer"
+                    style="@style/editTextAlert"
+                    android:hint="@string/full_name"
+                    android:inputType="textCapSentences" />
+
+
+                <EditText
+                    android:id="@+id/editText_offer_price_make_an_offer"
+                    style="@style/editTextAlert"
+                    android:hint="@string/offer_price_aed"
+                    android:inputType="number" />
+
+
+                <EditText
+                    android:id="@+id/editText_user_email_address_make_an_offer"
+                    style="@style/editTextAlert"
+                    android:hint="@string/email_address"
+                    android:inputType="textEmailAddress" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layoutDirection="ltr"
+                    android:background="@drawable/bg_edit_text_popup"
+                    android:orientation="horizontal">
+
+                    <com.paya.paragon.utilities.CountryCode.CountryCodePicker
+                        android:id="@+id/country_code_make_an_offer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center" />
+
+                    <EditText
+                        android:id="@+id/editText_phone_make_an_offer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/phone"
+                        android:inputType="number|phone"
+                        android:labelFor="@+id/editText_phone_edit_agent_profile"
+                        android:maxLength="13"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/editText_user_comments_make_an_offer"
+                    style="@style/editTextAlert"
+                    android:hint="@string/comments"
+                    android:inputType="textImeMultiLine" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_info_mortgage_make_an_offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffffffff"
+                    android:button="@drawable/selector_checkbox_newsletter"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/mortgage_info_property_contact_owner"
+                    android:textColor="#484848" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_terms_conditions_make_an_offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffffffff"
+                    android:button="@drawable/selector_checkbox_newsletter"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp"
+                    android:checked="true"
+                    android:text="@string/terms_and_conditions_and_privacy_policy"
+                    android:textColor="#484848" />
+
+                <TextView
+                    android:id="@+id/button_submit_make_an_offer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_button_yellow"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:paddingBottom="13dp"
+                    android:paddingTop="13dp"
+                    android:text="@string/submit"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="30dp"
+                android:background="#00000000" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

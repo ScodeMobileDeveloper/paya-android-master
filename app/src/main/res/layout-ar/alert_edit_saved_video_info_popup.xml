@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="LabelFor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alert_background_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:padding="3dp"
+                    tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/video_information"
+                        android:textColor="@color/text_color_search"
+                        android:textSize="22sp"
+                        tools:ignore="RelativeOverlap" />
+
+                <ImageView
+                        android:id="@+id/close_video_info_popup"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:padding="7dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        app:srcCompat="@drawable/icon_close_black"
+                        tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/title"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/edit_title_video_info_popup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enter_video_title"
+                    android:inputType="textMultiLine"
+                    android:minHeight="40dp"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/overview"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/edit_overview_video_info_popup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:gravity="center_vertical"
+                    android:inputType="textMultiLine"
+                    android:hint="@string/enter_video_overview"
+                    android:minHeight="60dp"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/button_update_video_info_popup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_button_yellow"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:paddingBottom="13dp"
+                    android:paddingTop="13dp"
+                    android:text="@string/update"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="30dp"
+                android:background="#00000000" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

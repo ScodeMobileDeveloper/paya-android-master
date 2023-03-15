@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sortList">
+        <item>Relevance</item>
+        <item>Price high to low</item>
+        <item>Price low to high</item>
+        <item>Newest Listing</item>
+        <item>Older listing</item>
+        <item>Built-up area high to low</item>
+        <item>Built-up area low  to high</item>
+    </string-array>
+    <string-array name="sortValue">
+        <item>featured/orderby/desc</item>
+        <item>price/orderby/desc</item>
+        <item>price/orderby/asc</item>
+        <item>date/orderby/desc</item>
+        <item>date/orderby/asc</item>
+        <item>sqrft/orderby/desc</item>
+        <item>sqrft/orderby/asc</item>
+    </string-array>
+    <string-array name="agent_sort_key_option">
+        <item>name sortBy asc</item>
+        <item>name sortBy desc</item>
+        <item>Count high to low</item>
+        <item>Count low to high</item>
+    </string-array>
+    <string-array name="agent_sort_value_option">
+        <item>asc</item>
+        <item>desc</item>
+        <item>high</item>
+        <item>low</item>
+    </string-array>
+
+</resources>

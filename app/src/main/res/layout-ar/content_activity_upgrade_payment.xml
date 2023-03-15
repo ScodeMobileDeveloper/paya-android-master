@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:focusableInTouchMode="true"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.paya.paragon.activity.dashboard.ActivityUpgradePayment"
+    tools:showIn="@layout/activity_upgrade_payment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/billing_information"
+                    android:textColor="@color/text_color_search"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/plan_title" />
+
+                        <TextView
+                            android:id="@+id/tv_plan_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ABCD"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_plan_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="AED 999"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/first_name"
+                    android:textColor="@color/text_color_search"
+                    android:textSize="16sp" />
+
+                <androidx.cardview.widget.CardView style="@style/CardViewStyleLogin">
+
+                    <EditText
+                        android:id="@+id/edt_first_name"
+                        style="@style/editTextSignin"
+                        android:inputType="textCapSentences|textNoSuggestions"
+                        android:singleLine="true" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/last_name"
+                    android:textColor="@color/text_color_search"
+                    android:textSize="16sp" />
+
+                <androidx.cardview.widget.CardView style="@style/CardViewStyleLogin">
+
+                    <EditText
+                        android:id="@+id/edt_last_name"
+                        style="@style/editTextSignin"
+                        android:inputType="textCapSentences|textNoSuggestions"
+                        android:singleLine="true"
+                        tools:ignore="LabelFor" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/country"
+                    android:textColor="@color/text_color_search"
+                    android:textSize="16sp" />
+
+                <androidx.cardview.widget.CardView style="@style/CardViewStyleLogin">
+
+                    <TextView
+                        android:id="@+id/tv_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/arrow_down_small"
+                        android:gravity="center_vertical"
+                        android:hint="@string/select_a_country"
+                        android:padding="10dp"
+                        android:textColor="@color/text_color_search"
+                        android:textColorHint="@color/text_color_search"
+                        android:textSize="16sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/state"
+                    android:textColor="@color/text_color_search"
+                    android:textSize="16sp" />
+
+                <androidx.cardview.widget.CardView style="@style/CardViewStyleLogin">
+
+                    <TextView
+                        android:id="@+id/tv_emirate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/arrow_down_small"
+                        android:gravity="center_vertical"
+                        android:hint="@string/select_a_state"
+                        android:padding="10dp"
+                        android:textColor="@color/text_color_search"
+                        android:textColorHint="@color/text_color_search"
+                        android:textSize="16sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/district"
+                    android:textColor="@color/text_color_search"
+                    android:textSize="16sp" />
+
+                <androidx.cardview.widget.CardView style="@style/CardViewStyleLogin">
+
+                    <TextView
+                        android:id="@+id/tv_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/arrow_down_small"
+                        android:gravity="center_vertical"
+                        android:hint="@string/select_a_district"
+                        android:padding="10dp"
+                        android:textColor="@color/text_color_search"
+                        android:textColorHint="@color/text_color_search"
+                        android:textSize="16sp" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/zip_postal_code"
+                    android:textColor="@color/text_color_search"
+                    android:textSize="16sp" />
+
+                <androidx.cardview.widget.CardView style="@style/CardViewStyleLogin">
+
+                    <EditText
+                        android:id="@+id/userZip"
+                        style="@style/editTextSignin"
+                        android:inputType="number"
+                        android:singleLine="true" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/address_1"
+                    android:textColor="@color/text_color_search"
+                    android:textSize="16sp" />
+
+                <androidx.cardview.widget.CardView style="@style/CardViewStyleLogin">
+
+                    <EditText
+                        android:id="@+id/billingAddrs1"
+                        style="@style/editTextSignin"
+                        android:singleLine="true" />
+                </androidx.cardview.widget.CardView>
+
+               <!-- <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/address_2"
+                    android:textColor="@color/text_color_search"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.CardView style="@style/CardViewStyleLogin">
+
+                    <EditText
+                        android:id="@+id/billingAddrs2"
+                        style="@style/editTextSignin"
+                        android:singleLine="true" />
+                </android.support.v7.widget.CardView>-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/mobile_number"
+                    android:textColor="@color/text_color_search"
+                    android:textSize="16sp" />
+
+                <androidx.cardview.widget.CardView style="@style/CardViewStyleLogin"
+                    android:layoutDirection="ltr">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.paya.paragon.utilities.CountryCode.CountryCodePicker
+                            android:id="@+id/country_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center" />
+
+                        <EditText
+                            android:id="@+id/edt_phone"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFFFF"
+                            android:inputType="number|phone"
+                            android:maxLength="11"
+                            android:maxLines="1"
+                            tools:ignore="LabelFor" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/email"
+                    android:textColor="@color/text_color_search"
+                    android:textSize="16sp" />
+
+                <androidx.cardview.widget.CardView style="@style/CardViewStyleLogin">
+
+                    <EditText
+                        android:id="@+id/edt_email"
+                        style="@style/editTextSignin"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/payment_information"
+                    android:textColor="@color/text_color_search"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/add_reward_point_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/reward_point_ch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+
+                        android:button="@drawable/selector_checkbox_newsletter" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_tc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingStart="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/add_reward_point"
+                            android:textColor="@color/text_color_search"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/add_reward_point"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="( You have 45 points for redemption. Out of this you can use 45 points for this transaction )"
+                            android:textColor="#818286"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/sub_total_amount"
+                        android:textColor="@color/sub_text"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/colon"
+                        android:textColor="@color/sub_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_sub_total"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="AED  499"
+                        android:textColor="@color/sub_text"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/taxable_amount_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/taxable_amount"
+                        android:textColor="@color/sub_text"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/colon"
+                        android:textColor="@color/sub_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/taxable_amount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="AED  499"
+                        android:textColor="@color/sub_text"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reward_point_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/reward_point_amount"
+                        android:textColor="@color/sub_text"
+
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/colon"
+                        android:textColor="@color/sub_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/reward_point_amount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="AED  499"
+                        android:textColor="@color/sub_text"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/total_amount"
+                        android:textColor="@color/text_color_search"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/colon"
+                        android:textColor="@color/text_color_search"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_total"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="AED  499"
+                        android:textColor="@color/text_color_search"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/payment_options"
+                    android:textColor="@color/text_color_search"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/choose_payment_method"
+                    android:textColor="@color/text_color_search"
+                    android:textSize="16sp" />
+
+                <androidx.cardview.widget.CardView style="@style/CardViewStyleLogin">
+
+                    <TextView
+                        android:id="@+id/tv_payment_methods"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/arrow_down_small"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/please_choose_any_payment_method"
+                        android:textColorHint="@color/text_color_search"
+                        android:textSize="16sp" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

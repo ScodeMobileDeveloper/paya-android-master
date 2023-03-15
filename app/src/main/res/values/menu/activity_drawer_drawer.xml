@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_myaccount"
+        android:icon="@drawable/rsz_41person"
+        android:title="My Account" />
+    <!--<item-->
+        <!--android:id="@+id/nav_builders"-->
+        <!--android:icon="@drawable/following_agents"-->
+        <!--android:title="Builders" />-->
+
+    <item
+        android:id="@+id/nav_posted_req"
+        android:icon="@drawable/rsz_postrequirments"
+        android:title="Post Your Requirement" />
+
+    <item
+        android:id="@+id/nav_postProperty"
+        android:icon="@drawable/rsz_postyourproperty"
+        android:title="Post Your Property" />
+
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@drawable/statistics"
+        android:title="DashBoard" />
+
+    <item
+        android:id="@+id/tending_locality"
+        android:icon="@drawable/rsz_trending_locality"
+        android:title="Trending Localities" />
+
+    <item
+        android:id="@+id/calculators"
+        android:icon="@drawable/rsz_calculators_jo"
+        android:title="Calculators" />
+
+    <item
+        android:id="@+id/realestateguid"
+        android:icon="@drawable/rsz_realestate_jo"
+        android:title="Real Estate Guide" />
+
+    <item
+        android:id="@+id/discuss_forum"
+        android:icon="@drawable/rsz_discussion_forum_jo"
+        android:title="Discussion Forum" />
+
+    <item
+        android:id="@+id/faq"
+        android:icon="@drawable/rsz_faq_jo"
+        android:title="FAQ" />
+
+    <item
+        android:id="@+id/company"
+        android:title="Our Company" >
+
+        <menu>
+
+            <item
+                android:id="@+id/about_us"
+                android:icon="@drawable/rsz_about_us_jo"
+                android:title="About us" />
+
+
+            <item
+                android:id="@+id/careers"
+                android:icon="@drawable/rsz_career_jo"
+                android:title="Careers" />
+
+            <item
+                android:id="@+id/services"
+                android:icon="@drawable/rsz_service_jo"
+                android:title="Services" />
+
+            <item
+                android:id="@+id/PrivacyPolicy"
+                android:icon="@drawable/rsz_pricy_policy_jo"
+                android:title="Privacy Policy" />
+
+            <item
+                android:id="@+id/TermsAndCondition"
+                android:icon="@drawable/rsz_terms_and_conditions_jo"
+                android:title="Terms and conditions" />
+            <item
+                android:id="@+id/contact_us"
+                android:icon="@drawable/rsz_contact_us"
+                android:title="Contact us"  />
+            <item
+                android:id="@+id/follow_us"
+                android:icon="@drawable/rsz_follow_us_jo"
+                android:title="Follow us"  />
+            <item
+                android:id="@+id/agent_details"
+                android:icon="@drawable/agent_icon"
+                android:title="Agents"  />
+
+        </menu>
+
+    </item>
+
+</menu>
