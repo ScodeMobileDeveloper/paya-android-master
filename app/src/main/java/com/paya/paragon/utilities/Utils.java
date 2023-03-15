@@ -96,7 +96,6 @@ public class Utils {
     public static final String ATTR_FLOOR_NUMBER_ID = "215";
     public static final String ATTR_FURNISHED_ID = "214";
 
-
     public static final String ATTR_BED_ROOM_STUDIO_ID = "482";
     public static final String ATTR_BED_ROOM_1_ID = "1";
     public static final String ATTR_BED_ROOM_2_ID = "2";
